@@ -1,0 +1,10 @@
+[user]
+	name = Curtis Bartell
+	email = 60277914+c-bartell@users.noreply.github.com
+[init]
+	defaultBranch = main
+[commit]
+	template = ../.gitmessage
+[core]
+	editor = vim
+	excludesfile = /Users/curtis/.gitignore
