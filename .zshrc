@@ -42,7 +42,7 @@ alias ber='bundle exec rspec'
 alias rubo='bundle exec rubocop'
 alias rc='rails routes -c'
 alias venv='. venv/bin/activate'
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
