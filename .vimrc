@@ -55,7 +55,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set number
+" Auto toggle between line number modes
+" https://jeffkreeftmeijer.com/vim-number/
+set number relativenumber
+augroup numbertoggle
+		autocmd!
+		autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+		autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+augroup END
+
 syntax on
 set tabstop=4
 set autoindent
