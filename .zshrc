@@ -43,6 +43,9 @@ alias rubo='bundle exec rubocop'
 alias rc='rails routes -c'
 alias venv='. venv/bin/activate'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
+alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
+alias megamekhq='java -jar ~/megamek/mekhq-0.48.0/MegaMekHQ.jar'
 
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
@@ -53,3 +56,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functionspip
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Java Runtime from Homebrew
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
