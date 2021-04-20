@@ -45,7 +45,7 @@ alias venv='. venv/bin/activate'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
 alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
-alias megamekhq='java -jar ~/megamek/mekhq-0.48.0/MegaMekHQ.jar'
+alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
 
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
