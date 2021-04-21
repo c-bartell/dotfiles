@@ -40,6 +40,10 @@ call vundle#begin()
 
 	Plugin 'christoomey/vim-tmux-navigator'
 
+	Plugin 'tpope/vim-rails'
+
+	Plugin 'rizzatti/dash.vim'
+
 	" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
