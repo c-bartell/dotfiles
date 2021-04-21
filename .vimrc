@@ -89,6 +89,8 @@ autocmd VimEnter * NERDTree | wincmd p
 
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNerdTreeFile = 1
+" Alias for opening NERDTree
+command NT NERDTree
 
 " NERDTree Git configuration
 let g:NERDTreeGitStatusUseNerdFonts = 1
