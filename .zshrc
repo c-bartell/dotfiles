@@ -48,6 +48,9 @@ alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
 alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
 alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
 
+# Aliases to set up challenge repos
+alias ruby_challenge="cp -r ~/challenge_templates/ruby_challenge" 
+
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
 
