@@ -43,13 +43,13 @@ alias rubo='bundle exec rubocop'
 alias rc='rails routes -c'
 alias venv='. venv/bin/activate'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias df='dotfiles'
+alias dot='dotfiles'
 alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
 alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
 alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
 
 # Aliases to set up challenge repos
-alias ruby_challenge="cp -r ~/challenge_templates/ruby_challenge" 
+alias ruby_challenge="cp -r ~/challenge_templates/ruby_challenge"
 
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
@@ -63,3 +63,16 @@ fi
 
 # Java Runtime from Homebrew
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+function statusCat() {
+     url="https://http.cat/$1"
+     open $url
+}
+
+function statusDog() {
+     url="https://httpstatusdogs.com/$1"
+     open $url
+}
+
+alias catus=statusCat
+alias bork=statusDog
