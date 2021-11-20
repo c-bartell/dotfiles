@@ -1,55 +1,18 @@
-# Load version control information
-autoload -Uz vcs_info
-precmd() { vcs_info }
+###########
+## ZSHRC ##
+###########
 
-# Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '%b'
-
-# Determine if current working directory is a git repository
-git_branch_color() {
-  if current_git_status=$(git status 2> /dev/null); then
-    parse_git_dirty
-  else
-    echo ""
-  fi
-}
-
-# Change branch color if working tree is clean
-parse_git_dirty() {
-  if current_git_status=$(git status | grep 'Changes to be committed:\|Untracked files:\|modified:|deleted:' 2> /dev/null); then
-    echo "%F{red}"
-  else
-#    echo "%F{#3279e3}"
-    echo "%F{green}"
-  fi
-}
-
-# Set up the prompt (with git branch name)
-setopt PROMPT_SUBST
-PROMPT='%F{cyan}%d $(git_branch_color)${vcs_info_msg_0_} %f¯\_(ツ)_/¯ '
-#PROMPT='%F{#136377}%d $(git_branch_color)${vcs_info_msg_0_} %f¯\_(ツ)_/¯ '
+source ~/.zsh_prompt
+source ~/.zsh_functions
+source ~/.zsh_aliases
+source ~/.zsh_env_vars
+source ~/.zsh_sensitive
 
 eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-
-# Aliases
-alias be='bundle exec'
-alias ber='bundle exec rspec'
-alias rubo='bundle exec rubocop'
-alias rc='rails routes -c'
-alias venv='. venv/bin/activate'
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dot='dotfiles'
-alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
-alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
-alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
-
-# Aliases to set up challenge repos
-alias ruby_challenge="cp -r ~/challenge_templates/ruby_challenge"
 
 # added by travis gem
 [ ! -s /Users/curtis/.travis/travis.sh ] || source /Users/curtis/.travis/travis.sh
@@ -64,15 +27,30 @@ fi
 # Java Runtime from Homebrew
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-function statusCat() {
-     url="https://http.cat/$1"
-     open $url
-}
 
-function statusDog() {
-     url="https://httpstatusdogs.com/$1"
-     open $url
-}
 
-alias catus=statusCat
-alias bork=statusDog
+# Black        0;30     Dark Gray     1;30
+# Red          0;31     Light Red     1;31
+# Green        0;32     Light Green   1;32
+# Brown/Orange 0;33     Yellow        1;33
+# Blue         0;34     Light Blue    1;34
+# Purple       0;35     Light Purple  1;35
+# Cyan         0;36     Light Cyan    1;36
+# Light Gray   0;37     White         1;37
+
+RED='\033[0;31m'
+ORANGE='\033[0;33m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+INDIGO='\033[1;35m'
+VIOLET='\033[0;35m'
+NC='\033[0m'
+
+echo -e "
+
+
+${RED}COOL ART GOES HERE!
+
+
+"

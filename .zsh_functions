@@ -1,0 +1,49 @@
+###############
+## FUNCTIONS ##
+###############
+
+# Use local .nvmrc settings on entry into repo
+function cdEnhanced() {
+	cd ${1:-${HOME}};
+	useNvmrc;
+}
+
+function useNvmrc() {
+  if [ -f .nvmrc ]; then
+    nvm use;
+  fi
+}
+
+# Kill a port
+function killport() {
+    port=$(lsof -n -i4TCP:$1 | grep LISTEN | awk '{ print $2 }')
+    kill -9 $port
+}
+
+function getuid() {
+    uuidgen \
+        | tr '[:upper:]' '[:lower:]' \
+        | tr -d '\n' | pbcopy
+}
+
+function statusCat() {
+	status_code=$1
+	url="https://http.cat/$1"
+	open $url
+}
+
+function statusDog() {
+	status_code=$1
+	url="https://httpstatusdogs.com/$1"
+	open $url
+}
+
+function weather() {
+	url="wttr.in/$1"
+	curl $url
+}
+
+function cheat() {
+	url="cheat.sh/$1"
+	curl $url
+}

@@ -1,5 +1,4 @@
-set nocompatible              " be iMproved, required
-filetype on                  " required
+set nocompatible              " be iMproved, required filetype on                  " required
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
@@ -14,37 +13,43 @@ set wildmenu
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-	" alternatively, pass a path where Vundle should install plugins
-	"call vundle#begin('~/some/path/here')
+  " alternatively, pass a path where Vundle should install plugins
+  "call vundle#begin('~/some/path/here')
 
-	" let Vundle manage Vundle, required
-	Plugin 'VundleVim/Vundle.vim'
+  " let Vundle manage Vundle, required
+  Plugin 'VundleVim/Vundle.vim'
 
-	" HardTime, a plugin to enforce good habits
-	Plugin 'takac/vim-hardtime'
+  " NerdTree file tree and extensions
+  Plugin 'preservim/nerdtree'
 
-	" NerdTree file tree and extensions
-	Plugin 'preservim/nerdtree'
-	
-	Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-	Plugin 'Xuyuanp/nerdtree-git-plugin' 
+  Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-	Plugin 'ryanoasis/vim-devicons'
+  Plugin 'ryanoasis/vim-devicons'
 
-	Bundle 'vim-ruby/vim-ruby'	
+  Bundle 'vim-ruby/vim-ruby'
 
-	Plugin 'tpope/vim-endwise'
+  Plugin 'tpope/vim-rails'
 
-	Plugin 'jiangmiao/auto-pairs'
+  Plugin 'tpope/vim-endwise'
 
-	Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'christoomey/vim-tmux-navigator'
 
-	Plugin 'tpope/vim-rails'
+  " Enable support for .editorconfig files
+  Plugin 'editorconfig/editorconfig-vim'
 
-	Plugin 'rizzatti/dash.vim'
+  Plugin 'tpope/vim-surround'
 
-	Plugin 'tpope/vim-surround'
+  " Depends on pbcopy and pbpaste
+  Plugin 'christoomey/vim-system-copy'
+
+  " JS syntax highlighting
+  Plugin 'pangloss/vim-javascript'
+
+  Plugin 'jiangmiao/auto-pairs'
+
+  Plugin 'kaicataldo/material.vim'
 
 	" All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,23 +81,18 @@ set autoindent
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " ENable filetype-specific plugins
 
-" HardTime configuration
-let g:hardtime_default_on = 0 
-let g:hardtime_showmsg = 1
-let g:fail_message = "TRY TO SUCK LESS!"
-
-let g:list_of_normal_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-let g:list_of_visual_keys = []
-let g:list_of_insert_keys = []
-let g:list_of_disabled_keys = []
-
 " NERDTree configuration
 autocmd VimEnter * NERDTree | wincmd p
 
+let NERDTreeShowHidden=1
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNerdTreeFile = 1
-" Alias for opening NERDTree
-command NT NERDTree
+
+" Fancy NERDTree shortcuts
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " NERDTree Git configuration
 let g:NERDTreeGitStatusUseNerdFonts = 1
@@ -109,3 +109,22 @@ nnoremap <C-H> <C-W><C-H>
 
 "Backspace through anything in insert mode
 set backspace=indent,eol,start
+
+" System Copy configuration
+let g:system_copy#copy_command='pbcopy'
+let g:system_copy#paste_command='pbpaste'
+let g:system_copy_silent = 1
+
+" editorconfig options
+au FileType gitcommit let b:EditorConfig_disable = 1
+
+" material.vim stuff
+let g:material_terminal_italics = 1
+
+" let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' |
+" 'darker' | 'darkerish' | 'default-community' | 'palenight-community' | 'ocean-community' |
+" 'lighter-community' | 'darker-community'
+"
+let g:material_theme_style = 'palenight'
+
+colorscheme material

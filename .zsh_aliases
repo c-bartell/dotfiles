@@ -1,0 +1,30 @@
+#############
+## ALIASES ##
+#############
+
+alias be='bundle exec'
+alias ber='bundle exec rspec'
+alias rubo='bundle exec rubocop'
+alias rc='rails routes -c'
+alias venv='. venv/bin/activate'
+alias cd=cdEnhanced
+alias sourcerc='source ~/.bash_profile; source ~/.zshrc'
+alias usebash='chsh -s /bin/bash'
+alias usezsh='chsh -s /bin/zsh'
+alias killport=killport
+# alias vim='/usr/local/Cellar/vim/8.2.3025/bin/vim'
+alias catus=statusCat
+alias bork=statusDog
+alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
+alias sweep='clear && source ~/.zshrc'
+alias weather=weather
+alias cheat=cheat
+
+# Aliases to set up challenge repos
+alias ruby_challenge='cp -r ~/challenge_templates/ruby_challenge'
+
+# MEGAMEK!!!!
+alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
+alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
+alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
