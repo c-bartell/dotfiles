@@ -3,6 +3,7 @@
 ###############
 
 # Use local .nvmrc settings on entry into repo
+unalias cd > /dev/null 2>&1
 function cdEnhanced() {
 	cd ${1:-${HOME}};
 	useNvmrc;
@@ -40,6 +41,8 @@ function statusDog() {
 
 function weather() {
 	url="wttr.in/$1"
+	# url="v2/wttr.in/$1"
+	
 	curl $url
 }
 
