@@ -6,5 +6,7 @@
 [commit]
 	template = ../.gitmessage
 [core]
-	editor = vim
+	editor = "vim -c 'set spell'"
 	excludesfile = /Users/curtis/.gitignore
+[alias]
+	spaghetti = log --graph --oneline --all	
