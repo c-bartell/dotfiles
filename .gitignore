@@ -1,3 +1,11 @@
 *~
+
+## Ignore vim buffer files
+
 *.swp
+
 *.swo
+
+## Ignore MacOS finder stuff
+
+.DS_Store
