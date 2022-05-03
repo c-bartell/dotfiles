@@ -13,45 +13,44 @@ set wildmenu
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-  " alternatively, pass a path where Vundle should install plugins
-  "call vundle#begin('~/some/path/here')
+	" alternatively, pass a path where Vundle should install plugins
+	"call vundle#begin('~/some/path/here')
 
-  " let Vundle manage Vundle, required
-  Plugin 'VundleVim/Vundle.vim'
+	" let Vundle manage Vundle, required
+	Plugin 'VundleVim/Vundle.vim'
 
-  " NerdTree file tree and extensions
-  Plugin 'preservim/nerdtree'
+	" NerdTree file tree and extensions
+	Plugin 'preservim/nerdtree'
 
-  Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-  Plugin 'Xuyuanp/nerdtree-git-plugin'
+	Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-  Plugin 'ryanoasis/vim-devicons'
+	Plugin 'ryanoasis/vim-devicons'
 
-  Bundle 'vim-ruby/vim-ruby'
+	Plugin 'christoomey/vim-tmux-navigator'
 
-  Plugin 'tpope/vim-rails'
+	" Enable support for .editorconfig files
+	Plugin 'editorconfig/editorconfig-vim'
 
-  Plugin 'tpope/vim-endwise'
+	Plugin 'tpope/vim-surround'
 
-  Plugin 'christoomey/vim-tmux-navigator'
+	" Depends on pbcopy and pbpaste
+	Plugin 'christoomey/vim-system-copy'
 
-  " Enable support for .editorconfig files
-  Plugin 'editorconfig/editorconfig-vim'
+	" JS syntax highlighting
+	Plugin 'pangloss/vim-javascript'
 
-  Plugin 'tpope/vim-surround'
+	Plugin 'jiangmiao/auto-pairs'
 
-  " Depends on pbcopy and pbpaste
-  Plugin 'christoomey/vim-system-copy'
+    Plugin 'jparise/vim-graphql'
 
-  " JS syntax highlighting
-  Plugin 'pangloss/vim-javascript'
+    " Color scheme packages
+	Plugin 'kaicataldo/material.vim'
 
-  Plugin 'jiangmiao/auto-pairs'
+    Plugin 'rafi/awesome-vim-colorschemes'
 
-  Plugin 'kaicataldo/material.vim'
-
-	" All of your Plugins must be added before the following line
+    " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -80,14 +79,12 @@ set tabstop=4
 set autoindent
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " ENable filetype-specific plugins
-
 " NERDTree configuration
 autocmd VimEnter * NERDTree | wincmd p
-
 let NERDTreeShowHidden=1
+
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNerdTreeFile = 1
-
 " Fancy NERDTree shortcuts
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -120,11 +117,22 @@ au FileType gitcommit let b:EditorConfig_disable = 1
 
 " material.vim stuff
 let g:material_terminal_italics = 1
-
 " let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' |
 " 'darker' | 'darkerish' | 'default-community' | 'palenight-community' | 'ocean-community' |
 " 'lighter-community' | 'darker-community'
-"
-let g:material_theme_style = 'palenight'
-
+let g:material_theme_style = 'darker'
 colorscheme material
+
+" favs: Archery | jellybeans | pink-moon | space-camp
+" These currently have problems with the cursor diappearing inside of
+" delimiters that I need to address later :(
+" colorscheme pink-moon
+
+" jparise/vim-graphql configuration
+au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
+
+" Undo dir configuration (must manually create ~/.vim/undo)
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+set undofile
