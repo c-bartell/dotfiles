@@ -20,6 +20,10 @@ alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
 alias sweep='clear && source ~/.zshrc'
 alias weather=weather
 alias cheat=cheat
+alias getuuid=getuid
+alias scripts="jq '.scripts' package.json"
+alias branch_clean="git branch | grep -v \"master\|main\" | xargs git branch -D" # Deletes all local branches except master
+alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
 
 # Aliases to set up challenge repos
 alias ruby_challenge='cp -r ~/challenge_templates/ruby_challenge'
