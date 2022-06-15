@@ -69,9 +69,3 @@ function printRandomValue() {
 	# index=$(($RANDOM % $#array[@])) # bash
 	echo -e "${IBOTTA}${array[$index]}${CLEAR}"
 }
-
-# alias invoke_lambda="aws lambda invoke --function-name ${basename '$PWD'} --cli-binary-format raw-in-base64-out --payload"
-#
-function invokeLambda() {
-
-}

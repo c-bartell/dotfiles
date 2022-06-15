@@ -25,4 +25,3 @@ alias branch_clean="git branch | grep -v \"master\|main\" | xargs git branch -D"
 alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
 alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
 alias tsrun="npx ts-node --pretty" # followed by filepath
-alias travlog="travis login --pro --github-token ${TRAVIS_GH_TOKEN}"
