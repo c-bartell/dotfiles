@@ -50,3 +50,28 @@ function cheat() {
 	url="cheat.sh/$1"
 	curl $url
 }
+
+function printRandomValue() {
+	IBOTTA='\033[48;2;232;70;120;38;2;255;255;255;1m'
+	CLEAR='\033[0m'
+	
+	array=(
+			"                    INTEGRITY                     "
+			"                     BOLDNESS                     "
+			"                    OUTHUSTLE                     "
+			"                     TEAMWORK                     "
+			"                   TRANSPARENCY                   "
+			"                  A GOOD IDEA...                  "
+	)
+
+	size=${#array[@]}
+	index=$(($RANDOM % $#array[@] + 1)) # zsh
+	# index=$(($RANDOM % $#array[@])) # bash
+	echo -e "${IBOTTA}${array[$index]}${CLEAR}"
+}
+
+# alias invoke_lambda="aws lambda invoke --function-name ${basename '$PWD'} --cli-binary-format raw-in-base64-out --payload"
+#
+function invokeLambda() {
+
+}

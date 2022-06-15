@@ -19,35 +19,44 @@ call vundle#begin()
 	" let Vundle manage Vundle, required
 	Plugin 'VundleVim/Vundle.vim'
 
+	" Terraform
+	Plugin 'hashivim/vim-terraform'
+
+	" GraphQL
+    Plugin 'jparise/vim-graphql'
+	
 	" NerdTree file tree and extensions
 	Plugin 'preservim/nerdtree'
-
 	Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 	Plugin 'Xuyuanp/nerdtree-git-plugin'
-
 	Plugin 'ryanoasis/vim-devicons'
-
-	Plugin 'christoomey/vim-tmux-navigator'
-
+	
 	" Enable support for .editorconfig files
 	Plugin 'editorconfig/editorconfig-vim'
-
-	Plugin 'tpope/vim-surround'
 
 	" Depends on pbcopy and pbpaste
 	Plugin 'christoomey/vim-system-copy'
 
-	" JS syntax highlighting
+	" Tmux integration
+	Plugin 'christoomey/vim-tmux-navigator'
+
+	" JavaScript
 	Plugin 'pangloss/vim-javascript'
 
+	" TypeScript
+	Plugin 'leafgarland/typescript-vim'
+	Plugin 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
+
+	" Linting
+	Plugin 'dense-analysis/ale' 
+
+	" QOL
+	Plugin 'tpope/vim-commentary'
+	Plugin 'tpope/vim-surround'
 	Plugin 'jiangmiao/auto-pairs'
-
-    Plugin 'jparise/vim-graphql'
-
-    " Color scheme packages
+	
+	" Color scheme packages
 	Plugin 'kaicataldo/material.vim'
-
     Plugin 'rafi/awesome-vim-colorschemes'
 
     " All of your Plugins must be added before the following line
@@ -78,9 +87,9 @@ syntax on
 set tabstop=4
 set autoindent
 filetype indent on " Enable filetype-specific indenting
-filetype plugin on " ENable filetype-specific plugins
+filetype plugin on " Enable filetype-specific plugins
 " NERDTree configuration
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 let NERDTreeShowHidden=1
 
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
@@ -120,7 +129,7 @@ let g:material_terminal_italics = 1
 " let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' |
 " 'darker' | 'darkerish' | 'default-community' | 'palenight-community' | 'ocean-community' |
 " 'lighter-community' | 'darker-community'
-let g:material_theme_style = 'darker'
+let g:material_theme_style = 'default'
 colorscheme material
 
 " favs: Archery | jellybeans | pink-moon | space-camp

@@ -1,11 +1,16 @@
 *~
 
 ## Ignore vim buffer files
-
 *.swp
-
 *.swo
 
-## Ignore MacOS finder stuff
-
+## Ignore OS Files
 .DS_Store
+
+## Ignore common IDE files
+.idea/
+.vscode/
+
+## Restricted files for .dotfiles repo
+.Trash/
+.dotfiles

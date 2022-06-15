@@ -6,7 +6,6 @@ alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias rubo='bundle exec rubocop'
 alias rc='rails routes -c'
-alias venv='. venv/bin/activate'
 alias cd=cdEnhanced
 alias sourcerc='source ~/.bash_profile; source ~/.zshrc'
 alias usebash='chsh -s /bin/bash'
@@ -24,11 +23,6 @@ alias getuuid=getuid
 alias scripts="jq '.scripts' package.json"
 alias branch_clean="git branch | grep -v \"master\|main\" | xargs git branch -D" # Deletes all local branches except master
 alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
-
-# Aliases to set up challenge repos
-alias ruby_challenge='cp -r ~/challenge_templates/ruby_challenge'
-
-# MEGAMEK!!!!
-alias megamek='java -jar ~/megamek/mekhq-0.48.0/MegaMek.jar'
-alias megameklab='java -jar ~/megamek/mekhq-0.48.0/MegaMekLab.jar'
-alias mekhq='java -jar ~/megamek/mekhq-0.48.0/MekHQ.jar'
+alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
+alias tsrun="npx ts-node --pretty" # followed by filepath
+alias travlog="travis login --pro --github-token ${TRAVIS_GH_TOKEN}"

@@ -1,39 +1,38 @@
-tap "amberframework/amber"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-brew "autoconf"
-brew "automake"
-brew "coreutils"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Emacs dependency management
 brew "cask"
-brew "crystal"
-brew "python@3.9"
-brew "crystal-icr"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Render markdown on the CLI
 brew "glow"
-brew "gnupg"
-brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Show markdown documents on text terminals
 brew "mdcat"
-brew "neofetch"
-brew "node"
+# Manage multiple Node.js versions
 brew "nvm"
-brew "openjdk"
-brew "php"
-brew "pyenv"
-brew "ruby-build"
+# Ruby version manager
 brew "rbenv"
+# Login and retrieve AWS temporary credentials using a SAML IDP
+brew "saml2aws"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vi 'workalike' with many additional features
 brew "vim"
+# JavaScript package manager
 brew "yarn"
-brew "zlib"
-brew "amberframework/amber/amber"
-brew "heroku/brew/heroku"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 cask "font-3270-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"

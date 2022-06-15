@@ -1,12 +1,12 @@
 [user]
 	name = Curtis Bartell
-	email = 60277914+c-bartell@users.noreply.github.com
+	email = curtis.bartell@ibotta.com
 [init]
 	defaultBranch = main
 [commit]
-	template = ../.gitmessage
+	template = ~/.gitmessage
 [core]
 	editor = "vim -c 'set spell'"
-	excludesfile = /Users/curtis/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
 	spaghetti = log --graph --oneline --all	
