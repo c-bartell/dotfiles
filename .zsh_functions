@@ -29,13 +29,13 @@ function getuid() {
 
 function statusCat() {
 	status_code=$1
-	url="https://http.cat/$1"
+	url="https://http.cat/$status_code"
 	open $url
 }
 
 function statusDog() {
 	status_code=$1
-	url="https://httpstatusdogs.com/$1"
+	url="https://httpstatusdogs.com/$status_code"
 	open $url
 }
 

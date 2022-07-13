@@ -130,12 +130,12 @@ let g:material_terminal_italics = 1
 " 'darker' | 'darkerish' | 'default-community' | 'palenight-community' | 'ocean-community' |
 " 'lighter-community' | 'darker-community'
 let g:material_theme_style = 'default'
-colorscheme material
+" colorscheme material
 
 " favs: Archery | jellybeans | pink-moon | space-camp
 " These currently have problems with the cursor diappearing inside of
 " delimiters that I need to address later :(
-" colorscheme pink-moon
+colorscheme abstract
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
