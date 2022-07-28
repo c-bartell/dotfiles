@@ -2,11 +2,11 @@
 ## ZSHRC ##
 ###########
 
-source ~/.zsh_prompt
-source ~/.zsh_functions
-source ~/.zsh_aliases
-source ~/.zsh_env_vars
-source ~/.zsh_sensitive
+source ~/.zsh/prompt
+source ~/.zsh/functions
+source ~/.zsh/aliases
+source ~/.zsh/env_vars
+source ~/.zsh/sensitive
 
 # Load NVM
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
