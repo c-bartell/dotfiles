@@ -17,6 +17,8 @@ brew "glow"
 brew "jq"
 # Show markdown documents on text terminals
 brew "mdcat"
+# MySQL Client
+brew "mysql"
 # Manage multiple Node.js versions
 brew "nvm"
 # Ruby version manager
