@@ -24,4 +24,6 @@ alias scripts="jq '.scripts' package.json"
 alias branch_clean="git branch | grep -v \"master\|main\" | xargs git branch -D" # Deletes all local branches except master
 alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
 alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
+alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
+alias mspec="bin/drake spring rspec"
 alias tsrun="npx ts-node --pretty" # followed by filepath
