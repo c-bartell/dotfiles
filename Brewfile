@@ -35,6 +35,7 @@ brew "vim"
 brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# ALL THE FONTS
 cask "font-3270-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"
@@ -51,3 +52,5 @@ cask "font-press-start-2p"
 cask "font-shure-tech-mono-nerd-font"
 cask "font-terminess-ttf-nerd-font"
 cask "font-terminus"
+# Window manager
+# cask "rectangle"
