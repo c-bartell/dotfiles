@@ -27,6 +27,8 @@ brew "rbenv"
 brew "saml2aws"
 # Terminal multiplexer
 brew "tmux"
+# Ibotta SOPS tool
+brew "Ibotta/public/sopstool"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
@@ -53,4 +55,6 @@ cask "font-shure-tech-mono-nerd-font"
 cask "font-terminess-ttf-nerd-font"
 cask "font-terminus"
 # Window manager
-# cask "rectangle"
+cask "rectangle"
+# VS Code
+cask "visual-studio-code"
