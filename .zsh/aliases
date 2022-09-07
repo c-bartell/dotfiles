@@ -14,6 +14,7 @@ alias killport=killport
 # alias vim='/usr/local/Cellar/vim/8.2.3025/bin/vim'
 alias catus=statusCat
 alias bork=statusDog
+alias dadjoke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/"
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
 alias sweep='clear && source ~/.zshrc'
