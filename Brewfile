@@ -58,3 +58,7 @@ cask "font-terminus"
 cask "rectangle"
 # VS Code
 cask "visual-studio-code"
+# IntelliJ IDEA Ultimate
+cask "intellij-idea"
+# DataGrip
+cask "datagrip"
