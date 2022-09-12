@@ -47,6 +47,9 @@ call vundle#begin()
 	Plugin 'leafgarland/typescript-vim'
 	Plugin 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
 
+	" Ruby
+	Plugin 'tpope/vim-endwise'
+
 	" Linting
 	Plugin 'dense-analysis/ale' 
 
