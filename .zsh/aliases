@@ -29,3 +29,4 @@ alias s2ax="saml2aws exec --exec-profile $1 --"
 alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
 alias mspec="bin/drake spring rspec"
 alias tsrun="npx ts-node --pretty" # followed by filepath
+alias create-window="alacritty msg create-window"
