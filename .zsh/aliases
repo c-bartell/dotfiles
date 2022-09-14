@@ -18,6 +18,7 @@ alias dadjoke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/"
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
 alias sweep='clear && source ~/.zshrc'
+alias create-window="alacritty msg create-window"
 alias weather=weather
 alias cheat=cheat
 alias getuuid=getuid
@@ -27,6 +28,6 @@ alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
 alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
 alias s2ax="saml2aws exec --exec-profile $1 --"
 alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
+alias local-aws="drake aws --endpoint-url=http://localhost:4566"
 alias mspec="bin/drake spring rspec"
 alias tsrun="npx ts-node --pretty" # followed by filepath
-alias create-window="alacritty msg create-window"
