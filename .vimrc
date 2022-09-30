@@ -79,12 +79,17 @@ filetype plugin indent on    " required
 
 " Auto toggle between line number modes
 " https://jeffkreeftmeijer.com/vim-number/
-set number relativenumber
-augroup numbertoggle
-		autocmd!
-		autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-		autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-augroup END
+" set number relativenumber
+" augroup numbertoggle
+" 		autocmd!
+" 		autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+" 		autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+" augroup END
+
+" Command to toggle absolute/hybrid-relative line numbers
+set relativenumber " Start with hybrid-relative
+" set number         " Start with absolute number
+nnoremap <silent> <C-n> :set relativenumber! <bar> set number!<CR>
 
 syntax on
 set tabstop=4
@@ -99,7 +104,7 @@ let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNerdTreeFile = 1
 " Fancy NERDTree shortcuts
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
