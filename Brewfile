@@ -62,3 +62,7 @@ cask "visual-studio-code"
 cask "intellij-idea"
 # DataGrip
 cask "datagrip"
+# Obsidian Markdown Notes
+cask "obsidian"
+# Notion notes app
+cask "notion"
