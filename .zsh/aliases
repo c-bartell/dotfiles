@@ -31,3 +31,4 @@ alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
 alias local-aws="drake aws --endpoint-url=http://localhost:4566"
 alias mspec="bin/drake spring rspec"
 alias tsrun="npx ts-node --pretty" # followed by filepath
+alias statmain="git rev-list --left-right --count origin/main...\$(git branch --show-current) | awk '{print \"Behind \"\$1\" - Ahead \"\$2\"\"}'"
