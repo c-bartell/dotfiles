@@ -31,6 +31,8 @@ brew "tmux"
 brew "Ibotta/public/sopstool"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# terraform runtime
+brew "tfenv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # JavaScript package manager
