@@ -33,3 +33,4 @@ alias mspec="bin/drake spring rspec"
 alias tfenv='GREP_OPTIONS=--color="never" tfenv'
 alias tsrun="npx ts-node --pretty" # followed by filepath
 alias statmain="git rev-list --left-right --count origin/main...\$(git branch --show-current) | awk '{print \"Behind \"\$1\" - Ahead \"\$2\"\"}'"
+alias webstats="curl -s https://status.plaintext.sh/t | grep 'aws\|datadog\|docker\|github\|pagerduty\|slack'"
