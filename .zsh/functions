@@ -49,6 +49,7 @@ function weather() {
 function cheat() {
 	url="cheat.sh/$1"
 	curl $url
+	# curl $url | less -Rg
 }
 
 function printRandomValue() {
