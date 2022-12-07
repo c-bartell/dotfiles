@@ -10,7 +10,8 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
-source ~/.vim/imports.vim
+source ~/.vim/plugins/imports.vim
+source ~/.vim/plugins/nerdtree_config.vim
 
 " Command to toggle absolute/hybrid-relative line numbers
 set relativenumber " Start with hybrid-relative
@@ -22,24 +23,6 @@ set tabstop=4
 set autoindent
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
-" NERDTree configuration
-" autocmd VimEnter * NERDTree | wincmd p
-let NERDTreeShowHidden=1
-
-let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
-let g:WebDevIconsDisableDefaultFileSymbolColorFromNerdTreeFile = 1
-" Fancy NERDTree shortcuts
-nnoremap <leader>n :NERDTreeFocus<CR>
-" nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-
-" NERDTree Git configuration
-let g:NERDTreeGitStatusUseNerdFonts = 1
-let g:NerdTreeGitStatusUntrackedFilesMode = 1
-
-" Vim-Devicons config
-set encoding=UTF-8
 
 " Remap pane nav to CTRL-Direction
 nnoremap <C-J> <C-W><C-J>
