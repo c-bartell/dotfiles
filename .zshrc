@@ -18,10 +18,8 @@ export GREP_OPTIONS='--color=always'
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Load rbenv
 eval "$(rbenv init -)"
-
-# added by travis gem
-[ ! -s /Users/curtis.bartell/.travis/travis.sh ] || source /Users/curtis.bartell/.travis/travis.sh
 
 source ~/.zsh/swag
 
