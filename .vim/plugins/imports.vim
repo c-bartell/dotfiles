@@ -38,6 +38,9 @@ call vundle#begin()
 	" Ruby
 	Plugin 'tpope/vim-endwise'
 
+	" Kotlin
+	Plugin 'udalov/kotlin-vim'
+
 	" Linting
 	Plugin 'dense-analysis/ale' 
 

@@ -7,6 +7,11 @@ tap "homebrew/core"
 brew "awscli"
 # Emacs dependency management
 brew "cask"
+# The wisdom of the cow
+brew "cowsay"
+# Strings to ASCII art
+brew "figlet"
+brew "toilet"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -15,6 +20,8 @@ brew "git"
 brew "glow"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Java SDK 17
+brew "openjdk@17"
 # Show markdown documents on text terminals
 brew "mdcat"
 # MySQL Client
@@ -67,4 +74,6 @@ cask "datagrip"
 # Obsidian Markdown Notes
 cask "obsidian"
 # Notion notes app
-cask "notion"
+# cask "notion"
+# Salesforce DX CLI
+cask "sfdx"
