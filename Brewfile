@@ -1,3 +1,6 @@
+# Brewfile syntax overview: https://homebrew-file.readthedocs.io/en/latest/usage.html
+# TODO: Modularize this file using "file" syntax
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -68,7 +71,7 @@ cask "rectangle"
 # VS Code
 cask "visual-studio-code"
 # IntelliJ IDEA Ultimate
-cask "intellij-idea"
+# cask "intellij-idea"
 # DataGrip
 cask "datagrip"
 # Obsidian Markdown Notes
