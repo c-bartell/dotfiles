@@ -46,7 +46,7 @@ brew "tfenv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # JavaScript package manager
-brew "yarn"
+# brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # ALL THE FONTS
@@ -73,9 +73,11 @@ cask "visual-studio-code"
 # IntelliJ IDEA Ultimate
 # cask "intellij-idea"
 # DataGrip
-cask "datagrip"
+# cask "datagrip"
 # Obsidian Markdown Notes
 cask "obsidian"
+# GNU Image Manupulation Program
+cask "gimp"
 # Notion notes app
 # cask "notion"
 # Salesforce DX CLI
