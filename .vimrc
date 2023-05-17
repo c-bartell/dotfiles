@@ -12,11 +12,12 @@ set wildmenu
 
 source ~/.vim/plugins/imports.vim
 source ~/.vim/plugins/nerdtree_config.vim
+source ~/.vim/plugins/appearance.vim
 
 " Command to toggle absolute/hybrid-relative line numbers
+set number         " Start with absolute number
 set relativenumber " Start with hybrid-relative
-" set number         " Start with absolute number
-nnoremap <silent> <C-n> :set relativenumber! <bar> set number!<CR>
+nnoremap <silent> <C-n> :set relativenumber!<CR>
 
 syntax on
 set tabstop=4
@@ -40,19 +41,6 @@ let g:system_copy_silent = 1
 
 " editorconfig options
 au FileType gitcommit let b:EditorConfig_disable = 1
-
-" material.vim stuff
-let g:material_terminal_italics = 1
-" let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' |
-" 'darker' | 'darkerish' | 'default-community' | 'palenight-community' | 'ocean-community' |
-" 'lighter-community' | 'darker-community'
-let g:material_theme_style = 'default'
-" colorscheme material
-
-" favs: Archery | abstract | jellybeans | pink-moon | space-camp
-" These currently have problems with the cursor diappearing inside of
-" delimiters that I need to address later :(
-colorscheme jellybeans 
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
