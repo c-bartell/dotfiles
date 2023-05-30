@@ -70,3 +70,7 @@ function printRandomValue() {
 	# index=$(($RANDOM % $#array[@])) # bash
 	echo -e "${IBOTTA}${array[$index]}${CLEAR}"
 }
+
+function dotRepo() {
+	git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}

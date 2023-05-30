@@ -17,7 +17,8 @@ alias caw="tput bel"
 alias catus=statusCat
 alias bork=statusDog
 alias dadjoke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/"
-alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot=dotRepo
 alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
 alias sweep='clear && source ~/.zshrc'
 alias create-window="alacritty msg create-window"
