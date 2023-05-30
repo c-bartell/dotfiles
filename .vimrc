@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required filetype on                  " required
 " enable syntax and plugins (for netrw)
 syntax enable
-filetype plugin on
+filetype plugin on " Try removing this at some point since it's present below
 " Finding Files:
 " Search down into sub folders
 " Provides tab-completion for all file-related tasks
@@ -24,6 +24,7 @@ set tabstop=4
 set autoindent
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
+syntax sync minlines=10000 " Prevents hilighting from giving up halfway through file >:( 
 
 " Remap pane nav to CTRL-Direction
 nnoremap <C-J> <C-W><C-J>
