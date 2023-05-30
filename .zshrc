@@ -21,7 +21,7 @@ export GREP_OPTIONS='--color=always'
 # Load rbenv
 eval "$(rbenv init -)"
 
-source ~/.zsh/swag
+source ~/.zsh/swag/ibotta
 
 useNvmrc
 
