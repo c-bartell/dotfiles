@@ -11,7 +11,7 @@ set path+=**
 set wildmenu
 
 source ~/.vim/plugins/imports.vim
-source ~/.vim/plugins/nerdtree_config.vim
+" source ~/.vim/plugins/nerdtree_config.vim
 source ~/.vim/plugins/appearance.vim
 
 " Command to toggle absolute/hybrid-relative line numbers
@@ -51,3 +51,5 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 set undofile
+
+set splitright

@@ -14,10 +14,10 @@ call vundle#begin()
     Plugin 'jparise/vim-graphql'
 	
 	" NerdTree file tree and extensions
-	Plugin 'preservim/nerdtree'
-	Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-	Plugin 'Xuyuanp/nerdtree-git-plugin'
-	Plugin 'ryanoasis/vim-devicons'
+	" Plugin 'preservim/nerdtree'
+	" Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+	" Plugin 'Xuyuanp/nerdtree-git-plugin'
+	" Plugin 'ryanoasis/vim-devicons'
 	
 	" Enable support for .editorconfig files
 	Plugin 'editorconfig/editorconfig-vim'
@@ -50,10 +50,14 @@ call vundle#begin()
 	Plugin 'jiangmiao/auto-pairs'
 	
 	" Color scheme packages
-	Plugin 'kaicataldo/material.vim'
+	" Plugin 'kaicataldo/material.vim'
     Plugin 'rafi/awesome-vim-colorschemes'
 
-    " All of your Plugins must be added before the following line
+	" fzf dependencies
+	Plugin 'junegunn/fzf'
+	Plugin 'junegunn/fzf.vim'
+
+	" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -67,13 +71,3 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-" Auto toggle between line number modes
-" https://jeffkreeftmeijer.com/vim-number/
-" set number relativenumber
-" augroup numbertoggle
-" 		autocmd!
-" 		autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-" 		autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-" augroup END
-
