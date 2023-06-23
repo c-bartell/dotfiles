@@ -8,6 +8,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# extended cat clone
+brew "bat"
 # Emacs dependency management
 brew "cask"
 # The wisdom of the cow
@@ -15,6 +17,8 @@ brew "cowsay"
 # Strings to ASCII art
 brew "figlet"
 brew "toilet"
+# fzf fuzzy find utility
+brew "fzf"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -33,6 +37,8 @@ brew "mysql"
 brew "nvm"
 # Ruby version manager
 brew "rbenv"
+# Search tool like grep, but better
+brew "ripgrep"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Terminal multiplexer
@@ -68,12 +74,10 @@ cask "font-terminess-ttf-nerd-font"
 cask "font-terminus"
 # Window manager
 cask "rectangle"
-# VS Code
-cask "visual-studio-code"
-# IntelliJ IDEA Ultimate
-# cask "intellij-idea"
+# Better VS Code
+cask "vscodium"
 # DataGrip
-# cask "datagrip"
+cask "datagrip"
 # Obsidian Markdown Notes
 cask "obsidian"
 # GNU Image Manupulation Program
