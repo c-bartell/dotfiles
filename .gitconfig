@@ -10,3 +10,7 @@
 	excludesfile = ~/.gitignore
 [alias]
 	spaghetti = log --graph --oneline --all	
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
