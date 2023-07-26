@@ -13,6 +13,7 @@ set wildmenu
 source ~/.vim/plugins/imports.vim
 " source ~/.vim/plugins/nerdtree_config.vim
 source ~/.vim/plugins/appearance.vim
+source ~/.vim/plugins/salesforce.vim
 
 " Command to toggle absolute/hybrid-relative line numbers
 set number         " Start with absolute number

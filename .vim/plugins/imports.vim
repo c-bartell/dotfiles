@@ -41,6 +41,9 @@ call vundle#begin()
 	" Kotlin
 	Plugin 'udalov/kotlin-vim'
 
+	" Salesforce
+	Plugin 'neowit/vim-force.com'
+
 	" Linting
 	Plugin 'dense-analysis/ale' 
 

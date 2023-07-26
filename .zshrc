@@ -21,6 +21,9 @@ export GREP_OPTIONS='--color=always'
 # Load rbenv
 eval "$(rbenv init -)"
 
+# Load autocomplete for Salesforce CLI
+eval "$(sf autocomplete script zsh)"
+
 source ~/.zsh/swag/ibotta
 
 useNvmrc
