@@ -5,6 +5,8 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let use_nerdtree = 0
+
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -21,11 +23,13 @@ Plug 'hashivim/vim-terraform'
 " GraphQL
 Plug 'jparise/vim-graphql'
 
-" NerdTree file tree and extensions
-" Plug 'preservim/nerdtree'
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'ryanoasis/vim-devicons'
+if use_nerdtree
+	" NerdTree file tree and extensions
+	Plug 'preservim/nerdtree'
+	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'ryanoasis/vim-devicons'
+endif
 
 " Enable support for .editorconfig files
 Plug 'editorconfig/editorconfig-vim'
@@ -65,7 +69,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'rafi/awesome-vim-colorschemes'
 
 " fzf dependencies
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf' " fzf managed through Brewfile
 Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
@@ -74,6 +78,8 @@ call plug#end()
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
+
+" Load individual plugin configurations:
 source .vim/plugins/config/appearance.vim
 source .vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
