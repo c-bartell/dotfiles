@@ -1,8 +1,8 @@
 " If vim-plug is not present, go get it.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
-	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 let use_nerdtree = 0
@@ -15,7 +15,7 @@ call plug#begin()
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
-" Make sure you use single quotes	
+" Make sure you use single quotes
 
 " Terraform
 Plug 'hashivim/vim-terraform'
@@ -24,11 +24,11 @@ Plug 'hashivim/vim-terraform'
 Plug 'jparise/vim-graphql'
 
 if use_nerdtree
-	" NerdTree file tree and extensions
-	Plug 'preservim/nerdtree'
-	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
-	Plug 'ryanoasis/vim-devicons'
+  " NerdTree file tree and extensions
+  Plug 'preservim/nerdtree'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'ryanoasis/vim-devicons'
 endif
 
 " Enable support for .editorconfig files
@@ -57,7 +57,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'neowit/vim-force.com'
 
 " Linting
-Plug 'dense-analysis/ale' 
+Plug 'dense-analysis/ale'
 
 " QOL
 Plug 'tpope/vim-commentary'
@@ -83,5 +83,5 @@ call plug#end()
 source .vim/plugins/config/appearance.vim
 source .vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
-	source .vim/plugins/config/nerdtree.vim
+  source .vim/plugins/config/nerdtree.vim
 endif
