@@ -1,76 +1,81 @@
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-	" alternatively, pass a path where Vundle should install plugins
-	"call vundle#begin('~/some/path/here')
+" If vim-plug is not present, go get it.
+" let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+" if empty(glob(data_dir . '/autoload/plug.vim'))
+" 		silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+" 		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
 
-	" let Vundle manage Vundle, required
-	Plugin 'VundleVim/Vundle.vim'
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-	" Terraform
-	Plugin 'hashivim/vim-terraform'
+" Make sure you use single quotes	
+" Terraform
+Plug 'hashivim/vim-terraform'
 
-	" GraphQL
-    Plugin 'jparise/vim-graphql'
-	
-	" NerdTree file tree and extensions
-	" Plugin 'preservim/nerdtree'
-	" Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-	" Plugin 'Xuyuanp/nerdtree-git-plugin'
-	" Plugin 'ryanoasis/vim-devicons'
-	
-	" Enable support for .editorconfig files
-	Plugin 'editorconfig/editorconfig-vim'
+" GraphQL
+Plug 'jparise/vim-graphql'
 
-	" Depends on pbcopy and pbpaste
-	Plugin 'christoomey/vim-system-copy'
+" NerdTree file tree and extensions
+" Plug 'preservim/nerdtree'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'ryanoasis/vim-devicons'
 
-	" Tmux integration
-	Plugin 'christoomey/vim-tmux-navigator'
+" Enable support for .editorconfig files
+Plug 'editorconfig/editorconfig-vim'
 
-	" JavaScript
-	Plugin 'pangloss/vim-javascript'
+" Depends on pbcopy and pbpaste
+Plug 'christoomey/vim-system-copy'
 
-	" TypeScript
-	Plugin 'leafgarland/typescript-vim'
-	Plugin 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
+" Tmux integration
+Plug 'christoomey/vim-tmux-navigator'
 
-	" Ruby
-	Plugin 'tpope/vim-endwise'
+" JavaScript
+Plug 'pangloss/vim-javascript'
 
-	" Kotlin
-	Plugin 'udalov/kotlin-vim'
+" TypeScript
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
 
-	" Salesforce
-	Plugin 'neowit/vim-force.com'
+" Ruby
+Plug 'tpope/vim-endwise'
 
-	" Linting
-	Plugin 'dense-analysis/ale' 
+" Kotlin
+Plug 'udalov/kotlin-vim'
 
-	" QOL
-	Plugin 'tpope/vim-commentary'
-	Plugin 'tpope/vim-surround'
-	Plugin 'jiangmiao/auto-pairs'
-	
-	" Color scheme packages
-	" Plugin 'kaicataldo/material.vim'
-    Plugin 'rafi/awesome-vim-colorschemes'
+" Salesforce
+Plug 'neowit/vim-force.com'
 
-	" fzf dependencies
-	Plugin 'junegunn/fzf'
-	Plugin 'junegunn/fzf.vim'
+" Linting
+Plug 'dense-analysis/ale' 
 
-	" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" QOL
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+
+" Color scheme packages
+" Plug 'kaicataldo/material.vim'
+Plug 'rafi/awesome-vim-colorschemes'
+
+" fzf dependencies
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
+source .vim/plugins/config/appearance.vim
+source .vim/plugins/config/salesforce.vim
+if has_key(plugs, 'nerdtree')
+	source .vim/plugins/config/nerdtree.vim
+endif

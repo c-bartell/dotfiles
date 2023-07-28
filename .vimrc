@@ -10,21 +10,22 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
+" Load plugins
 source ~/.vim/plugins/imports.vim
-" source ~/.vim/plugins/nerdtree_config.vim
-source ~/.vim/plugins/appearance.vim
-source ~/.vim/plugins/salesforce.vim
 
 " Command to toggle absolute/hybrid-relative line numbers
 set number         " Start with absolute number
 set relativenumber " Start with hybrid-relative
 nnoremap <silent> <C-n> :set relativenumber!<CR>
 
+" Is vim-plug handling this for me?
 syntax on
+" Do I need this if I have a global .editorconfig?
 set tabstop=4
 set autoindent
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
+" Is this actually doing anything?
 syntax sync minlines=10000 " Prevents hilighting from giving up halfway through file >:( 
 
 " Remap pane nav to CTRL-Direction
