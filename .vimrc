@@ -39,13 +39,7 @@ let g:system_copy#copy_command='pbcopy'
 let g:system_copy#paste_command='pbpaste'
 let g:system_copy_silent = 1
 
-" editorconfig options
-au FileType gitcommit let b:EditorConfig_disable = 1
-
-" jparise/vim-graphql configuration
-au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
-
-" Undo dir configuration (must manually create ~/.vim/undo)
+" Undo dir configuration
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000

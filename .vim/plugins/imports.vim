@@ -85,3 +85,9 @@ source .vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
   source .vim/plugins/config/nerdtree.vim
 endif
+
+" editorconfig options
+au FileType gitcommit let b:EditorConfig_disable = 1
+
+" jparise/vim-graphql configuration
+au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
