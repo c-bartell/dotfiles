@@ -80,8 +80,8 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
 
 " Load individual plugin configurations:
-source .vim/plugins/config/appearance.vim
-source .vim/plugins/config/salesforce.vim
+source ~/.vim/plugins/config/appearance.vim
+source ~/.vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
   source .vim/plugins/config/nerdtree.vim
 endif
