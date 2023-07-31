@@ -55,6 +55,8 @@ brew "vim"
 # brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# iterm2
+cask "iterm2"
 # ALL THE FONTS
 cask "font-3270-nerd-font"
 cask "font-fira-code-nerd-font"
