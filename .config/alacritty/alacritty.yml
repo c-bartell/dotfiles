@@ -14,28 +14,67 @@
 
 window:
   padding:
-    x: 5 
-    y: 5 
-  decorations: buttonless 
+    x: 5
+    y: 5
+  decorations: buttonless
   title: 1337_hax_tools
   dynamic_title: true
 
+scrolling:
+  history: 10000
+
 font:
+  # iterm2 font
   normal:
-    family: JetBrainsMono Nerd Font
+    family: Monaco
     style: Regular
   bold:
-    family: JetBrainsMono Nerd Font
+    family: Monaco
     style: Bold
   italic:
-    family: JetBrainsMono Nerd Font
+    family: Monaco
     style: Italic
+
+#   normal:
+#     family: JetBrainsMono Nerd Font
+#     style: Regular
+#   bold:
+#     family: JetBrainsMono Nerd Font
+#     style: Bold
+#   italic:
+#     family: JetBrainsMono Nerd Font
+#     style: Italic
   size: 12.0
 
 colors:
   primary:
    background: '#000000'
-   foreground: '#ffffff'
+   foreground: '#c7c7c7'
+   # foreground: '#ffffff'
+
+
+  # iterm2 colors:
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#c91b00'
+    green:   '#00c200'
+    yellow:  '#c7c400'
+    blue:    '#0225c7'
+    magenta: '#c930c7'
+    cyan:    '#00c5c7'
+    white:   '#c7c7c7'
+
+  # Bright colors
+  bright:
+    black:   '#676767'
+    red:     '#ff6d67'
+    green:   '#5ff967'
+    yellow:  '#fefb67'
+    blue:    '#6871ff'
+    magenta: '#ff76ff'
+    cyan:    '#5ffdff'
+    white:   '#fffeff'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
