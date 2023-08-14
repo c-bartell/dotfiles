@@ -5,19 +5,17 @@
 alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias rubo='bundle exec rubocop'
-alias rc='rails routes -c'
+alias rc='bundle exec rails routes -c'
 alias cd=cdEnhanced
 alias sourcerc='source ~/.bash_profile; source ~/.zshrc'
 alias usebash='chsh -s /bin/bash'
 alias usezsh='chsh -s /bin/zsh'
 alias killport=killport
-# alias vim='/usr/local/Cellar/vim/8.2.3025/bin/vim'
 # Ring the terminal bell. Use like: $ <run-something> && caw to get notified on finish
 alias caw="tput bel"
 alias catus=statusCat
 alias bork=statusDog
 alias dadjoke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/"
-# alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dot=dotRepo
 alias beautree='tree --dirsfirst -alCL' # Takes required arg of max level
 alias sweep='clear && source ~/.zshrc'
@@ -32,8 +30,8 @@ alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
 alias s2ax="saml2aws exec --exec-profile $1 --"
 alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
 alias local-aws="drake aws --endpoint-url=http://localhost:4566"
-alias mspec="bin/drake spring rspec"
 alias tfenv='GREP_OPTIONS=--color="never" tfenv'
+alias grepc='grep --color="always"'
 alias tfinit="terraform init -backend=false"
 alias tfclean="rm -rf .terraform .terraform.lock.hcl"
 alias tsrun="npx ts-node --pretty" # followed by filepath
