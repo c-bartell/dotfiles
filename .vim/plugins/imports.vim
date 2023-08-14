@@ -75,6 +75,9 @@ Plug 'junegunn/fzf.vim'
 " netrw settings
 Plug 'tpope/vim-vinegar'
 
+" All hail the AI overlords
+Plug 'github/copilot.vim'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
