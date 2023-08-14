@@ -35,6 +35,8 @@ brew "mdcat"
 brew "mysql"
 # Manage multiple Node.js versions
 brew "nvm"
+# Source code analyzer (installing for APEX)
+brew "pmd7", args: ["build-from-source"] # Currently using a custom, local formula to pull from latest release and map to pmd
 # Ruby version manager
 brew "rbenv"
 # Search tool like grep, but better
