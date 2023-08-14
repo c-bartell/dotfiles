@@ -72,6 +72,9 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'junegunn/fzf' " fzf managed through Brewfile
 Plug 'junegunn/fzf.vim'
 
+" netrw settings
+Plug 'tpope/vim-vinegar'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
