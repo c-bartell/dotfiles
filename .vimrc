@@ -18,7 +18,7 @@ set splitright
 set tabstop=4
 set autoindent
 " Is this actually doing anything?
-syntax sync minlines=10000 " Prevents hilighting from giving up halfway through file >:( 
+syntax sync minlines=10000 " Prevents hilighting from giving up halfway through file >:(
 
 " Command to toggle absolute/hybrid-relative line numbers
 set number         " Start with absolute number
@@ -44,3 +44,6 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 set undofile
+
+" Set to auto read when a file is changed from the outside
+set autoread
