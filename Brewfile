@@ -6,6 +6,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+
 # Official Amazon AWS command-line interface
 brew "awscli"
 # extended cat clone
@@ -36,6 +37,7 @@ brew "mysql"
 # Manage multiple Node.js versions
 brew "nvm"
 # Source code analyzer (installing for APEX)
+# brew "pmd"
 brew "pmd7", args: ["build-from-source"] # Currently using a custom, local formula to pull from latest release and map to pmd
 # Ruby version manager
 brew "rbenv"
@@ -51,6 +53,8 @@ brew "Ibotta/public/sopstool"
 brew "tree"
 # terraform runtime
 brew "tfenv"
+# Vim Linter
+brew "vint"
 # Vi 'workalike' with many additional features
 brew "vim"
 # JavaScript package manager
