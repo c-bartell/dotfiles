@@ -29,7 +29,8 @@ parse_git_dirty() {
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='%F{cyan}%d $(git_branch_color)${vcs_info_msg_0_} %f(ಠ_ಠ) '
+# PROMPT='%F{cyan}%d $(git_branch_color)${vcs_info_msg_0_} %f(ಠ_ಠ) '
+PROMPT='%F{cyan}%1~ $(git_branch_color)${vcs_info_msg_0_} %f%B¯\_(ツ)_/¯ %F{green}> %f%b'
 
 # Prompts I rotate through because I get bored easily:
 # (ಠ_ಠ)
