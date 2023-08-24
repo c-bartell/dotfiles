@@ -11,8 +11,9 @@ alias sourcerc='source ~/.bash_profile; source ~/.zshrc'
 alias usebash='chsh -s /bin/bash'
 alias usezsh='chsh -s /bin/zsh'
 alias killport=killport
+# Leaving this here to remind myself how to play the bell, but use new alert function instead.
 # Ring the terminal bell. Use like: $ <run-something> && caw to get notified on finish
-alias caw="tput bel"
+# alias caw="tput bel"
 alias catus=statusCat
 alias bork=statusDog
 alias dadjoke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/"

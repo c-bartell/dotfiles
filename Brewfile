@@ -18,6 +18,8 @@ brew "cowsay"
 # Strings to ASCII art
 brew "figlet"
 brew "toilet"
+# ffmpeg is a cli audio/video processing tool
+brew "ffmpeg"
 # fzf fuzzy find utility
 brew "fzf"
 # GitHub command-line tool

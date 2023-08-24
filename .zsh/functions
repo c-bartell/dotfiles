@@ -42,7 +42,7 @@ function statusDog() {
 function weather() {
 	url="wttr.in/$1"
 	# url="v2/wttr.in/$1"
-	
+
 	curl $url
 }
 
@@ -55,7 +55,7 @@ function cheat() {
 function printRandomValue() {
 	IBOTTA='\033[48;2;232;70;120;38;2;255;255;255;1m'
 	CLEAR='\033[0m'
-	
+
 	array=(
 			"                    INTEGRITY                     "
 			"                     BOLDNESS                     "
@@ -73,4 +73,22 @@ function printRandomValue() {
 
 function dotRepo() {
 	git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+
+# Wrap function calls and play alert sounds on completion
+function alert() {
+  eval $@
+
+  if [ $? -eq 0 ]; then
+    echo "Success!"
+    afplay "./sounds/CAW.mp3"
+  else
+    echo "🚨Failure!!!🚨"
+    afplay "./sounds/klaxon.mp3"
+  fi
+}
+
+# Handy function for testing script fail paths
+function fail() {
+  return 1
 }
