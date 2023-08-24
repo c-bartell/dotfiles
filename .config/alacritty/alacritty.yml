@@ -125,6 +125,6 @@ bell:
   command:
     program: afplay
     # Sound source: https://pixabay.com/sound-effects/croworraven1-6749/
-    args: ["./sounds/CAW.mp3"]
+    args: ["--time",  "0.4", "./sounds/CAW.mp3"]
     # program: osascript
     # args: ["-e", "beep"]
