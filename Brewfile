@@ -65,6 +65,8 @@ brew "vim"
 cask "alacritty"
 # iterm2
 cask "iterm2"
+# Insomnia REST API Client
+cask "insomnia"
 # ALL THE FONTS
 cask "font-3270-nerd-font"
 cask "font-fira-code-nerd-font"
