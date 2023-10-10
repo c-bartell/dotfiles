@@ -35,7 +35,8 @@ alias tfenv='GREP_OPTIONS=--color="never" tfenv'
 alias grepc='grep --color="always"'
 alias tfinit="terraform init -backend=false"
 alias tfclean="rm -rf .terraform .terraform.lock.hcl"
-alias tsrun="npx ts-node --pretty" # followed by filepath
+# alias tsrun="npx ts-node --pretty" # followed by filepath
+alias tsrun="npm exec -- ts-node --pretty" # followed by filepath
 alias statmain="git rev-list --left-right --count origin/main...\$(git branch --show-current) | awk '{print \"Behind \"\$1\" - Ahead \"\$2\"\"}'"
 alias webstats="curl -s https://status.plaintext.sh/t | grep 'aws\|datadog\|docker\|github\|pagerduty\|slack'"
 alias wat="curl -s https://gist.githubusercontent.com/c-bartell/158c171a2ec2c4250fe75ee52626b6e6/raw/5433f2af5fbb7940ed1a98b45a5475472ca52848/cheat_sheet.md | glow -p"
