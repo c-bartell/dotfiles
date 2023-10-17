@@ -15,6 +15,8 @@ brew "bat"
 brew "cask"
 # The wisdom of the cow
 brew "cowsay"
+# Use brew managed curl until Apple patches built-in curl
+brew "curl"
 # Strings to ASCII art
 brew "figlet"
 brew "toilet"
