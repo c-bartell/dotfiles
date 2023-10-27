@@ -24,33 +24,155 @@ scrolling:
   history: 10000
 
 font:
+  size: 18.0
+
   # iterm2 font
+  # normal:
+  #   family: Monaco
+  #   style: Regular
+  # bold:
+  #   family: Monaco
+  #   style: Bold
+  # italic:
+  #   family: Monaco
+  #   style: Italic
+
+  # JetBrainsMono
+  # normal:
+  #   family: JetBrainsMono Nerd Font
+  #   style: Regular
+  # bold:
+  #   family: JetBrainsMono Nerd Font
+  #   style: Bold
+  # italic:
+  #   family: JetBrainsMono Nerd Font
+  #   style: Italic
+
+  # Hasklug
+  # normal:
+  #   family: Hasklug Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: Hasklug Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: Hasklug Nerd Font Mono
+  #   style: Italic
+
+  # BigBlueTerm437
+  # normal:
+  #   family: BigBlueTerm437 Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: BigBlueTerm437 Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: BigBlueTerm437 Nerd Font Mono
+  #   style: Italic
+
+  # BigBlueTermPlus
+  # normal:
+  #   family: BigBlueTermPlus Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: BigBlueTermPlus Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: BigBlueTermPlus Nerd Font Mono
+  #   style: Italic
+
+  # BlexMono (IBM Plex Nerd Font)
+  # normal:
+  #   family: BlexMono Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: BlexMono Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: BlexMono Nerd Font Mono
+  #   style: Italic
+
+  # Monocraft
+  # normal:
+  #   family: Monocraft Nerd Font
+  #   style: Book
+  # bold:
+  #   family: Monocraft Nerd Font
+  #   style: Book
+  # italic:
+  #   family: Monocraft Nerd Font
+  #   style: Book
+
+  # BitstromWera
+  # normal:
+  #   family: BitstromWera Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: BitstromWera Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: BitstromWera Nerd Font Mono
+  #   style: Italic
+
+  # ShureTechMono
+  # normal:
+  #   family: ShureTechMono Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: ShureTechMono Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: ShureTechMono Nerd Font Mono
+  #   style: Italic
+
+  # Terminess
+  # normal:
+  #   family: Terminess Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: Terminess Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: Terminess Nerd Font Mono
+  #   style: Italic
+
+  # Mononoki
+  # normal:
+  #   family: Mononoki Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: Mononoki Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: Mononoki Nerd Font Mono
+  #   style: Italic
+
+  # FiraMono
+  # normal:
+  #   family: FiraMono Nerd Font Mono
+  #   style: Regular
+  # bold:
+  #   family: FiraMono Nerd Font Mono
+  #   style: Bold
+  # italic:
+  #   family: FiraMono Nerd Font Mono
+  #   style: Italic
+
+  # AnonymicePro
   normal:
-    family: Monaco
+    family: AnonymicePro Nerd Font Mono
     style: Regular
   bold:
-    family: Monaco
+    family: AnonymicePro Nerd Font Mono
     style: Bold
   italic:
-    family: Monaco
+    family: AnonymicePro Nerd Font Mono
     style: Italic
-
-#   normal:
-#     family: JetBrainsMono Nerd Font
-#     style: Regular
-#   bold:
-#     family: JetBrainsMono Nerd Font
-#     style: Bold
-#   italic:
-#     family: JetBrainsMono Nerd Font
-#     style: Italic
-  size: 14.0
 
 colors:
   primary:
    background: '#000000'
    foreground: '#c7c7c7'
-   # foreground: '#ffffff'
 
 
   # iterm2 colors:
@@ -60,7 +182,8 @@ colors:
     red:     '#c91b00'
     green:   '#00c200'
     yellow:  '#c7c400'
-    blue:    '#0225c7'
+    # blue:    '#0225c7'
+    blue: '#2a45bf' # Less awful blue
     magenta: '#c930c7'
     cyan:    '#00c5c7'
     white:   '#c7c7c7'
