@@ -81,10 +81,10 @@ function alert() {
 
   if [ $? -eq 0 ]; then
     echo "Success!"
-    afplay "./sounds/CAW.mp3"
+    afplay "$HOME/sounds/CAW.mp3"
   else
     echo "🚨Failure!!!🚨"
-    afplay "./sounds/klaxon.mp3"
+    afplay "$HOME/sounds/klaxon.mp3"
   fi
 }
 
