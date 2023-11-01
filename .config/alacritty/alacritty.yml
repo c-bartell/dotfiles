@@ -1,6 +1,5 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-# TODO: Break up this file using import syntax.
 # Import additional configuration files
 #
 # Imports are loaded in order, skipping all missing files, with the importing
@@ -25,7 +24,7 @@ scrolling:
 
 import:
   - ~/.config/alacritty/font.yml
-  - ~/.config/alacritty/color.yml
+  - ~/.config/alacritty/schemes/iterm2.yml
   - ~/.config/alacritty/bell.yml
 
 selection:
