@@ -1,0 +1,158 @@
+fonts:
+  AnonymicePro: &AnonymicePro
+    size: 18.0
+    normal:
+      family: AnonymicePro Nerd Font Mono
+      style: Regular
+    bold:
+      family: AnonymicePro Nerd Font Mono
+      style: Bold
+    italic:
+      family: AnonymicePro Nerd Font Mono
+      style: Italic
+
+  BigBlueTerm437: &BigBlueTerm437
+    size: 14.0
+    normal:
+      family: BigBlueTerm437 Nerd Font Mono
+      style: Regular
+    bold:
+      family: BigBlueTerm437 Nerd Font Mono
+      style: Bold
+    italic:
+      family: BigBlueTerm437 Nerd Font Mono
+      style: Italic
+
+  BigBlueTermPlus: &BigBlueTermPlus
+    size: 14.0
+    normal:
+      family: BigBlueTermPlus Nerd Font Mono
+      style: Regular
+    bold:
+      family: BigBlueTermPlus Nerd Font Mono
+      style: Bold
+    italic:
+      family: BigBlueTermPlus Nerd Font Mono
+      style: Italic
+
+  BitstromWera: &BitstromWera
+    size: 14.0
+    normal:
+      family: BitstromWera Nerd Font Mono
+      style: Regular
+    bold:
+      family: BitstromWera Nerd Font Mono
+      style: Bold
+    italic:
+      family: BitstromWera Nerd Font Mono
+      style: Italic
+
+  BlexMono: &BlexMono
+    size: 14.0
+    normal:
+      family: BlexMono Nerd Font Mono
+      style: Regular
+    bold:
+      family: BlexMono Nerd Font Mono
+      style: Bold
+    italic:
+      family: BlexMono Nerd Font Mono
+      style: Italic
+
+  FiraMono: &FiraMono
+    size: 14.0
+    normal:
+      family: FiraMono Nerd Font Mono
+      style: Regular
+    bold:
+      family: FiraMono Nerd Font Mono
+      style: Bold
+    italic:
+      family: FiraMono Nerd Font Mono
+      style: Italic
+
+  Hasklug: &Hasklug
+    size: 14.0
+    normal:
+      family: Hasklug Nerd Font Mono
+      style: Regular
+    bold:
+      family: Hasklug Nerd Font Mono
+      style: Bold
+    italic:
+      family: Hasklug Nerd Font Mono
+      style: Italic
+
+  iterm2: &iterm2
+    size: 14.0
+    normal:
+      family: Monaco
+      style: Regular
+    bold:
+      family: Monaco
+      style: Bold
+    italic:
+      family: Monaco
+      style: Italic
+
+  JetBrainsMono: &JetBrainsMono
+    size: 14.0
+    normal:
+      family: JetBrainsMono Nerd Font
+      style: Regular
+    bold:
+      family: JetBrainsMono Nerd Font
+      style: Bold
+    italic:
+      family: JetBrainsMono Nerd Font
+      style: Italic
+
+  Monocraft: &Monocraft
+    size: 14.0
+    normal:
+      family: Monocraft Nerd Font
+      style: Book
+    bold:
+      family: Monocraft Nerd Font
+      style: Book
+    italic:
+      family: Monocraft Nerd Font
+      style: Book
+
+  Mononoki: &Mononoki
+    size: 14.0
+    normal:
+      family: Mononoki Nerd Font Mono
+      style: Regular
+    bold:
+      family: Mononoki Nerd Font Mono
+      style: Bold
+    italic:
+      family: Mononoki Nerd Font Mono
+      style: Italic
+
+  ShureTechMono: &ShureTechMono
+    size: 14.0
+    normal:
+      family: ShureTechMono Nerd Font Mono
+      style: Regular
+    bold:
+      family: ShureTechMono Nerd Font Mono
+      style: Bold
+    italic:
+      family: ShureTechMono Nerd Font Mono
+      style: Italic
+
+  Terminess: &Terminess
+    size: 14.0
+    normal:
+      family: Terminess Nerd Font Mono
+      style: Regular
+    bold:
+      family: Terminess Nerd Font Mono
+      style: Bold
+    italic:
+      family: Terminess Nerd Font Mono
+      style: Italic
+
+font: *AnonymicePro
