@@ -1,6 +1,6 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-# Import additional configuration files
+# Import additional configuration files:
 #
 # Imports are loaded in order, skipping all missing files, with the importing
 # file being loaded last. If a field is already present in a previous import, it
@@ -8,8 +8,11 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
+# import:
+#   - /path/to/alacritty.yml
+
+# Clone this into ~/.config/alacritty/themes: https://github.com/alacritty/alacritty-theme
+# $ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 
 window:
   padding:
@@ -24,7 +27,7 @@ scrolling:
 
 import:
   - ~/.config/alacritty/font.yml
-  - ~/.config/alacritty/schemes/iterm2.yml
+  - ~/.config/alacritty/custom_themes/iterm2.yml
   - ~/.config/alacritty/bell.yml
 
 selection:
