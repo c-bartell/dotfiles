@@ -67,6 +67,8 @@ brew "vim"
 # brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Brave
+cask "brave-browser"
 # iterm2
 cask "iterm2"
 # Insomnia REST API Client
