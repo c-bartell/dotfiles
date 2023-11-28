@@ -14,12 +14,14 @@
 " Use terminal background:
 " https://github.com/nanotech/jellybeans.vim#terminal-background
 set termguicolors
-let g:jellybeans_overrides = {
-\  'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-\}
-if has('termguicolors') && &termguicolors
-  let g:jellybeans_overrides['background']['guibg'] = 'none'
-endif
-colorscheme jellybeans 
+" let g:jellybeans_overrides = {
+" \  'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+" \}
+" if has('termguicolors') && &termguicolors
+"   let g:jellybeans_overrides['background']['guibg'] = 'none'
+" endif
+" colorscheme jellybeans
 
 " colorscheme pink-moon
+
+colorscheme blood-moon

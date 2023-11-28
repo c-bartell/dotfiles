@@ -27,8 +27,42 @@ scrolling:
 
 import:
   - ~/.config/alacritty/font.yml
-  - ~/.config/alacritty/custom_themes/iterm2.yml
+  # - ~/.config/alacritty/custom_themes/catpuccin.yaml
+  # - ~/.config/alacritty/themes/themes/catpuccin.yaml
+  # - ~/.config/alacritty/themes/themes/iterm.yaml
+  # - ~/.config/alacritty/themes/themes/papercolor_dark.yaml
+  - ~/.config/alacritty/themes/themes/blood_moon.yaml
+  # - ~/.config/alacritty/themes/themes/ayu_dark.yaml
+  # - ~/.config/alacritty/themes/themes/campbell.yaml
+  # - ~/.config/alacritty/themes/themes/baitong.yaml
+  # - ~/.config/alacritty/themes/themes/github_dark.yaml
+  # - ~/.config/alacritty/themes/themes/github_dark_colorblind.yaml
+  # - ~/.config/alacritty/themes/themes/github_dark_high_contrast.yaml
+  # - ~/.config/alacritty/themes/themes/hyper.yaml
+  # - ~/.config/alacritty/themes/themes/marine_dark.yaml
+  # - ~/.config/alacritty/themes/themes/material_them_mod.yaml
+  # - ~/.config/alacritty/themes/themes/midnight-haze.yaml
+  # - ~/.config/alacritty/themes/themes/monokai_charcoal.yaml
+  # - ~/.config/alacritty/themes/themes/nordic.yaml
+  # - ~/.config/alacritty/themes/themes/onmi.yaml
+  # - ~/.config/alacritty/themes/themes/pencil_dark.yaml
+  # - ~/.config/alacritty/themes/themes/rainbow.yaml
+  # - ~/.config/alacritty/themes/themes/rose-pine.yaml
+  # - ~/.config/alacritty/themes/themes/smoooooth.yaml
+  # - ~/.config/alacritty/themes/themes/snazzy.yaml
+  # - ~/.config/alacritty/themes/themes/taerminal.yaml
+  # - ~/.config/alacritty/themes/themes/tango_dark.yaml
+  # - ~/.config/alacritty/themes/themes/tender.yaml
+  # - ~/.config/alacritty/themes/themes/terminal_app.yaml
+  # - ~/.config/alacritty/themes/themes/thelovelace.yaml
+  # - ~/.config/alacritty/themes/themes/tomorrow_night_bright.yaml
+  # - ~/.config/alacritty/themes/themes/wombat.yaml
+  # - ~/.config/alacritty/themes/themes/xterm.yaml
   - ~/.config/alacritty/bell.yml
+
+# colors:
+#   primary:
+#     background: '0x000000'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

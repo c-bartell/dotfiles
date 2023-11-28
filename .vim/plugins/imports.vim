@@ -67,6 +67,7 @@ Plug 'jiangmiao/auto-pairs'
 " Color scheme packages
 " Plug 'kaicataldo/material.vim'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'dguo/blood-moon', { 'rtp': 'applications/vim' }
 
 " fzf dependencies
 Plug 'junegunn/fzf' " fzf managed through Brewfile
