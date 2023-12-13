@@ -46,6 +46,10 @@ Plug 'pangloss/vim-javascript'
 " TypeScript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
+Plug 'peitalin/vim-jsx-typescript'
+
+" React
+Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 
 " Ruby
 Plug 'tpope/vim-endwise'

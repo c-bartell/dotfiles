@@ -17,8 +17,10 @@ set splitright
 " Do I need this if I have a global .editorconfig?
 set tabstop=4
 set autoindent
-" Is this actually doing anything?
-syntax sync minlines=10000 " Prevents hilighting from giving up halfway through file >:(
+
+" Fix syntax highlighting becoming out of sync in large files:
+autocmd BufEnter *.{js,jsx,ts,tsx,json} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx,json} :syntax sync clear
 
 " Command to toggle absolute/hybrid-relative line numbers
 set number         " Start with absolute number
