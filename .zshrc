@@ -24,6 +24,9 @@ eval "$(sf autocomplete script zsh)"
 # No system java without this:
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Load SDKMAN (not managed by brew):
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # Colorize man pages with bat
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
@@ -37,6 +40,14 @@ export LESS_TERMCAP_me=$'\e[0m'        # reset bold/blink
 export LESS_TERMCAP_se=$'\e[0m'        # reset reverse video
 export LESS_TERMCAP_ue=$'\e[0m'        # reset underline
 export MANPAGER='less -s -M +Gg'
+
+# Configure zsh history:
+export HISTFILE=~/.zsh_history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+
+# Don't save duplicate entries
+setopt hist_ignore_all_dups
 
 # Save history accross tmux windows
 setopt share_history
