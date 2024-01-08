@@ -94,7 +94,7 @@ call plug#end()
 source ~/.vim/plugins/config/appearance.vim
 source ~/.vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
-  source .vim/plugins/config/nerdtree.vim
+  source ~/.vim/plugins/config/nerdtree.vim
 endif
 
 " editorconfig options
