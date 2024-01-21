@@ -102,3 +102,6 @@ au FileType gitcommit let b:EditorConfig_disable = 1
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
+
+" Lint my zsh files
+au BufNewFile,BufRead */.zsh/aliases,*/.zsh/functions,*/.zsh/prompt,*/.zsh/sensitive,*/.zsh/env_vars setfiletype zsh
