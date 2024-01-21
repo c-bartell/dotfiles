@@ -18,13 +18,16 @@ set splitright
 set tabstop=4
 set autoindent
 
+" Enable search highlighting
+set hlsearch
+
 " Fix syntax highlighting becoming out of sync in large files:
 autocmd BufEnter *.{js,jsx,ts,tsx,json} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx,json} :syntax sync clear
 
 " Command to toggle absolute/hybrid-relative line numbers
 set number         " Start with absolute number
-set relativenumber " Start with hybrid-relative
+" set relativenumber " Start with hybrid-relative
 nnoremap <silent> <C-n> :set relativenumber!<CR>
 
 " Remap pane nav to CTRL-Direction
