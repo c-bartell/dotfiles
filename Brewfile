@@ -40,6 +40,8 @@ brew "openjdk@17"
 brew "mdcat"
 # MySQL Client
 brew "mysql"
+# Get on the hype train
+brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
 # Source code analyzer (installing for APEX)

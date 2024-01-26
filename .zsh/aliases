@@ -44,3 +44,4 @@ alias wat="curl -s https://gist.githubusercontent.com/c-bartell/158c171a2ec2c425
 alias els="eza --icons=always"
 alias ell="eza -alh --icons=always"
 alias etree="eza --tree --icons=always"
+alias vim="nvim"
