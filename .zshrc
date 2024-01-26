@@ -42,9 +42,27 @@ export LESS_TERMCAP_ue=$'\e[0m'        # reset underline
 export MANPAGER='less -s -M +Gg'
 
 # Configure zsh history:
-export HISTFILE=~/.zsh_history
+# Allow multiple terminal sessions to all append to one zsh command history
+setopt APPEND_HISTORY
+
+# Add comamnds as they are typed, don't wait until shell exit
+setopt INC_APPEND_HISTORY
+
+# Do not write events to history that are duplicates of previous events
+setopt HIST_IGNORE_DUPS
+
+# When searching history don't display results already cycled through twice
+setopt HIST_FIND_NO_DUPS
+
+# Remove extra blanks from each command line being added to history
+setopt HIST_REDUCE_BLANKS
+
+# Include more information about when the command was executed, etc
+setopt EXTENDED_HISTORY
+
 export HISTFILESIZE=1000000000
-export HISTSIZE=1000000000
+export HISTSIZE=10000
+export HISTFILE=~/.zsh_history
 
 # Don't save duplicate entries
 setopt hist_ignore_all_dups
