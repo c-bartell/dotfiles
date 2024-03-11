@@ -2,6 +2,9 @@
 ## ZSHRC ##
 ###########
 
+# Log everything for debugging
+# setopt xtrace
+
 source ~/.zsh/prompt
 source ~/.zsh/functions
 source ~/.zsh/aliases
