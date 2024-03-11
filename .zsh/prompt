@@ -27,10 +27,25 @@ parse_git_dirty() {
   fi
 }
 
+git_root_path () {
+  GIT_PREFIX=$(git rev-parse --show-prefix 2> /dev/null)
+  GIT_PREFIX_EXIT_CODE=$?
+
+  if [[ $GIT_PREFIX_EXIT_CODE -gt 0 || -z $GIT_PREFIX ]]; then
+    prompt_short_dir=$GIT_PREFIX
+    unset GIT_PREFIX
+    echo "%1~"
+  else
+    echo "$GIT_PREFIX"
+  fi
+}
+
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
+
 # PROMPT='%F{cyan}%d $(git_branch_color)${vcs_info_msg_0_} %f(ಠ_ಠ) '
-PROMPT='%F{cyan}%1~ $(git_branch_color)${vcs_info_msg_0_} %f%B¯\_(ツ)_/¯ %F{green}> %f%b'
+# PROMPT='%F{cyan}%1~ $(git_branch_color)${vcs_info_msg_0_} %f%B¯\_(ツ)_/¯ %F{green}> %f%b'
+PROMPT='%F{cyan}$(git_root_path) $(git_branch_color)${vcs_info_msg_0_} %f%B¯\_(ツ)_/¯ %F{green}> %f%b'
 
 # Prompts I rotate through because I get bored easily:
 # (ಠ_ಠ)
