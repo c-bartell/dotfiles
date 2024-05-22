@@ -26,4 +26,4 @@ set termguicolors
 
 " colorscheme blood-moon
 
-colorscheme catppuccin_mocha
+colorscheme catppuccin-mocha
