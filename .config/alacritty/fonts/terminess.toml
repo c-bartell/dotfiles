@@ -1,0 +1,14 @@
+size = 14.0
+
+[font.Terminess.bold]
+family = "Terminess Nerd Font Mono"
+style = "Bold"
+
+[font.Terminess.italic]
+family = "Terminess Nerd Font Mono"
+style = "Italic"
+
+[font.Terminess.normal]
+family = "Terminess Nerd Font Mono"
+style = "Regular"
+

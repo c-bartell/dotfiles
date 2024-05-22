@@ -1,0 +1,13 @@
+size = 14.0
+
+[font.iterm2.bold]
+family = "Monaco"
+style = "Bold"
+
+[font.iterm2.italic]
+family = "Monaco"
+style = "Italic"
+
+[font.iterm2.normal]
+family = "Monaco"
+style = "Regular"

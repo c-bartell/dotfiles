@@ -1,0 +1,14 @@
+# [font.BigBlueTerm437]
+size = 14.0
+
+[font.BigBlueTerm437.bold]
+family = "BigBlueTerm437 Nerd Font Mono"
+style = "Bold"
+
+[font.BigBlueTerm437.italic]
+family = "BigBlueTerm437 Nerd Font Mono"
+style = "Italic"
+
+[font.BigBlueTerm437.normal]
+family = "BigBlueTerm437 Nerd Font Mono"
+style = "Regular"

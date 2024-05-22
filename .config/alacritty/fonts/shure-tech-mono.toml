@@ -1,0 +1,14 @@
+size = 14.0
+
+[font.ShureTechMono.bold]
+family = "ShureTechMono Nerd Font Mono"
+style = "Bold"
+
+[font.ShureTechMono.italic]
+family = "ShureTechMono Nerd Font Mono"
+style = "Italic"
+
+[font.ShureTechMono.normal]
+family = "ShureTechMono Nerd Font Mono"
+style = "Regular"
+

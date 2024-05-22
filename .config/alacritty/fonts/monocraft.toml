@@ -1,0 +1,13 @@
+size = 14.0
+
+[font.Monocraft.bold]
+family = "Monocraft Nerd Font"
+style = "Book"
+
+[font.Monocraft.italic]
+family = "Monocraft Nerd Font"
+style = "Book"
+
+[font.Monocraft.normal]
+family = "Monocraft Nerd Font"
+style = "Book"
