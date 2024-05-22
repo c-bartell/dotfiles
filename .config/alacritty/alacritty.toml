@@ -1,0 +1,21 @@
+import = ["~/.config/alacritty/fonts/anonymicepro.toml", "~/.config/alacritty/themes/themes/blood_moon.toml", "~/.config/alacritty/bell.toml"]
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[scrolling]
+history = 100000
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "buttonless"
+dynamic_title = true
+title = "1337_hax_tools"
+# opacity = 0.1
+
+[window.padding]
+x = 5
+y = 5

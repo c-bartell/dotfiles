@@ -1,0 +1,8 @@
+[bell]
+animation = "EaseOutSine"
+color = "#ff00c8"
+duration = 0
+
+[bell.command]
+args = ["--time", "0.4", "./sounds/CAW.mp3"]
+program = "afplay"

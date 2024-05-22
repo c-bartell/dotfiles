@@ -1,0 +1,15 @@
+# AnonymicePro
+[font]
+size = 18.0
+
+[font.bold]
+family = "AnonymicePro Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "AnonymicePro Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "AnonymicePro Nerd Font Mono"
+style = "Regular"

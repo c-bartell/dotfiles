@@ -1,0 +1,14 @@
+size = 14.0
+
+[font.Mononoki.bold]
+family = "Mononoki Nerd Font Mono"
+style = "Bold"
+
+[font.Mononoki.italic]
+family = "Mononoki Nerd Font Mono"
+style = "Italic"
+
+[font.Mononoki.normal]
+family = "Mononoki Nerd Font Mono"
+style = "Regular"
+

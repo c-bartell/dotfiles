@@ -1,0 +1,13 @@
+size = 14.0
+
+[font.BlexMono.bold]
+family = "BlexMono Nerd Font Mono"
+style = "Bold"
+
+[font.BlexMono.italic]
+family = "BlexMono Nerd Font Mono"
+style = "Italic"
+
+[font.BlexMono.normal]
+family = "BlexMono Nerd Font Mono"
+style = "Regular"
