@@ -75,8 +75,9 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'dguo/blood-moon', { 'rtp': 'applications/vim' }
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
-" Lightline
-Plug 'itchyny/lightline.vim'
+" lualine
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " fzf dependencies
 Plug 'junegunn/fzf' " fzf managed through Brewfile
@@ -98,23 +99,11 @@ call plug#end()
 " Load individual plugin configurations:
 source ~/.vim/plugins/config/appearance.vim
 source ~/.vim/plugins/config/salesforce.vim
+source ~/.vim/plugins/config/lua/catppuccin.nvimx
+source ~/.vim/plugins/config/lua/lualine.nvimx
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
-
-" Set lightline color scheme
-let g:lightline = {'colorscheme': 'catppuccin'}
-
-lua <<LUA
-require('catppuccin').setup({
-  flavour = "mocha",
-  integrations = {
-    indent_blankline = {
-      enabled = true,
-    },
-  }
-})
-LUA
 
 " indent-blankline setup
 lua require('ibl').setup()
@@ -124,6 +113,9 @@ au FileType gitcommit let b:EditorConfig_disable = 1
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
+
+" Highlight embedded lua in vimscript files if they're in .vim/plugins/config/lua
+au BufNewFile,BufRead */.vim/plugins/config/lua/*.nvimx setfiletype lua
 
 " Lint my zsh files
 au BufNewFile,BufRead */.zsh/aliases,*/.zsh/functions,*/.zsh/prompt,*/.zsh/sensitive,*/.zsh/env_vars setfiletype zsh
