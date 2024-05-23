@@ -74,6 +74,9 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'dguo/blood-moon', { 'rtp': 'applications/vim' }
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
+" Lightline
+Plug 'itchyny/lightline.vim'
+
 " fzf dependencies
 Plug 'junegunn/fzf' " fzf managed through Brewfile
 Plug 'junegunn/fzf.vim'
@@ -97,6 +100,9 @@ source ~/.vim/plugins/config/salesforce.vim
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
+
+" Set lightline color scheme
+let g:lightline = {'colorscheme': 'catppuccin'}
 
 " editorconfig options
 au FileType gitcommit let b:EditorConfig_disable = 1
