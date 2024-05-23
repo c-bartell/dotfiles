@@ -67,6 +67,7 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Color scheme packages
 " Plug 'kaicataldo/material.vim'
@@ -103,6 +104,20 @@ endif
 
 " Set lightline color scheme
 let g:lightline = {'colorscheme': 'catppuccin'}
+
+lua <<LUA
+require('catppuccin').setup({
+  flavour = "mocha",
+  integrations = {
+    indent_blankline = {
+      enabled = true,
+    },
+  }
+})
+LUA
+
+" indent-blankline setup
+lua require('ibl').setup()
 
 " editorconfig options
 au FileType gitcommit let b:EditorConfig_disable = 1
