@@ -1,0 +1,12 @@
+lua <<LUA
+require('catppuccin').setup({
+  flavour = "mocha",
+  integrations = {
+    indent_blankline = {
+      enabled = true,
+    },
+    markdown = true,
+    treesitter = true,
+  }
+})
+LUA
