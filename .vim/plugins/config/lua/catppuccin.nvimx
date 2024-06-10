@@ -6,6 +6,7 @@ require('catppuccin').setup({
       enabled = true,
     },
     markdown = true,
+    treesitter = true,
   }
 })
 LUA

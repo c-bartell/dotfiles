@@ -55,10 +55,14 @@ brew "ripgrep"
 brew "saml2aws"
 # Terminal multiplexer
 brew "tmux"
+# Tmux templating
+brew "tmuxinator"
 # Ibotta SOPS tool
 brew "Ibotta/public/sopstool"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Tree Sitter cli
+brew "tree-sitter"
 # terraform runtime
 brew "tfenv"
 # Vim Linter
