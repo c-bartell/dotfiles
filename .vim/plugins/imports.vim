@@ -93,6 +93,7 @@ call plug#end()
 
 " Load individual plugin configurations:
 source ~/.vim/plugins/config/appearance.vim
+source ~/.vim/plugins/config/ale.vim
 source ~/.vim/plugins/config/salesforce.vim
 source ~/.vim/plugins/config/lua/catppuccin.nvimx
 source ~/.vim/plugins/config/lua/lualine.nvimx
