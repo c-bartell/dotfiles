@@ -5,6 +5,10 @@
 # Log everything for debugging
 # setopt xtrace
 
+# enable bashcompinit
+autoload -Uz +X compinit && compinit
+autoload -Uz +X bashcompinit && bashcompinit
+
 source ~/.zsh/prompt
 source ~/.zsh/functions
 source ~/.zsh/aliases
@@ -13,6 +17,7 @@ source ~/.zsh/sensitive
 
 # Colorize 'ls' output without needing to pass --color
 export CLICOLOR=1
+
 
 # Load NVM
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -73,6 +78,6 @@ setopt hist_ignore_all_dups
 # Save history accross tmux windows
 setopt share_history
 
-source ~/.zsh/swag/ibotta
+source ~/.zsh/swag/pry_and_cry
 
 useNvmrc
