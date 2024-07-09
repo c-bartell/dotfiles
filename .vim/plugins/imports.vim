@@ -40,13 +40,8 @@ Plug 'christoomey/vim-system-copy'
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 
-" JavaScript
-Plug 'pangloss/vim-javascript'
-
-" TypeScript
-Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim', {'for': ['typescript']}
-Plug 'peitalin/vim-jsx-typescript'
+" Syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " React
 Plug 'styled-components/vim-styled-components', {'branch': 'main'}
@@ -67,11 +62,17 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Color scheme packages
 " Plug 'kaicataldo/material.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'dguo/blood-moon', { 'rtp': 'applications/vim' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
+" lualine
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " fzf dependencies
 Plug 'junegunn/fzf' " fzf managed through Brewfile
@@ -92,16 +93,26 @@ call plug#end()
 
 " Load individual plugin configurations:
 source ~/.vim/plugins/config/appearance.vim
+source ~/.vim/plugins/config/ale.vim
 source ~/.vim/plugins/config/salesforce.vim
+source ~/.vim/plugins/config/lua/catppuccin.nvimx
+source ~/.vim/plugins/config/lua/lualine.nvimx
+source ~/.vim/plugins/config/lua/nvim-treesitter.nvimx
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
+
+" indent-blankline setup
+lua require('ibl').setup()
 
 " editorconfig options
 au FileType gitcommit let b:EditorConfig_disable = 1
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
+
+" Highlight embedded lua in vimscript files if they're in .vim/plugins/config/lua
+au BufNewFile,BufRead */.vim/plugins/config/lua/*.nvimx setfiletype lua
 
 " Lint my zsh files
 au BufNewFile,BufRead */.zsh/aliases,*/.zsh/functions,*/.zsh/prompt,*/.zsh/sensitive,*/.zsh/env_vars setfiletype zsh

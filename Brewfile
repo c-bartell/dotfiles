@@ -9,6 +9,8 @@ tap "homebrew/core"
 
 # Official Amazon AWS command-line interface
 brew "awscli"
+# AWS-SSO
+brew "aws-sso-util"
 # extended cat clone
 brew "bat"
 # Emacs dependency management
@@ -55,10 +57,14 @@ brew "ripgrep"
 brew "saml2aws"
 # Terminal multiplexer
 brew "tmux"
+# Tmux templating
+brew "tmuxinator"
 # Ibotta SOPS tool
 brew "Ibotta/public/sopstool"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Tree Sitter cli
+brew "tree-sitter"
 # terraform runtime
 brew "tfenv"
 # Vim Linter
