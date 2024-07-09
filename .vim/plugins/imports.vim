@@ -95,9 +95,9 @@ call plug#end()
 source ~/.vim/plugins/config/appearance.vim
 source ~/.vim/plugins/config/ale.vim
 source ~/.vim/plugins/config/salesforce.vim
-source ~/.vim/plugins/config/lua/catppuccin.nvimx
+lua require("config.catppuccin")
 lua require("config.lualine")
-source ~/.vim/plugins/config/lua/nvim-treesitter.nvimx
+lua require("config.nvim-treesitter")
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
@@ -110,9 +110,6 @@ au FileType gitcommit let b:EditorConfig_disable = 1
 
 " jparise/vim-graphql configuration
 au BufNewFile,BufRead *.graphql,*.gql,*.graphqls setfiletype graphql
-
-" Highlight embedded lua in vimscript files if they're in .vim/plugins/config/lua
-au BufNewFile,BufRead */.vim/plugins/config/lua/*.nvimx setfiletype lua
 
 " Lint my zsh files
 au BufNewFile,BufRead */.zsh/aliases,*/.zsh/functions,*/.zsh/prompt,*/.zsh/sensitive,*/.zsh/env_vars setfiletype zsh
