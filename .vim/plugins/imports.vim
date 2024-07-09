@@ -96,7 +96,7 @@ source ~/.vim/plugins/config/appearance.vim
 source ~/.vim/plugins/config/ale.vim
 source ~/.vim/plugins/config/salesforce.vim
 source ~/.vim/plugins/config/lua/catppuccin.nvimx
-source ~/.vim/plugins/config/lua/lualine.nvimx
+lua require("config.lualine")
 source ~/.vim/plugins/config/lua/nvim-treesitter.nvimx
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
