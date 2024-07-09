@@ -9,6 +9,8 @@ tap "homebrew/core"
 
 # Official Amazon AWS command-line interface
 brew "awscli"
+# AWS-SSO
+brew "aws-sso-util"
 # extended cat clone
 brew "bat"
 # Emacs dependency management
