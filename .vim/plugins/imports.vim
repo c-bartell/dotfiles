@@ -31,9 +31,6 @@ if use_nerdtree
   Plug 'ryanoasis/vim-devicons'
 endif
 
-" Enable support for .editorconfig files
-Plug 'editorconfig/editorconfig-vim'
-
 " Depends on pbcopy and pbpaste
 Plug 'christoomey/vim-system-copy'
 

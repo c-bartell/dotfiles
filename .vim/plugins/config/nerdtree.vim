@@ -14,6 +14,3 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " NERDTree Git configuration
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NerdTreeGitStatusUntrackedFilesMode = 1
-
-" Vim-Devicons config
-set encoding=UTF-8
