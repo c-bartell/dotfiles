@@ -92,3 +92,16 @@ function alert() {
 function fail() {
   return 1
 }
+
+# Kill docker in cold blood
+function murderdocker() {
+  docker stop $(docker ps -a -q)
+  docker rm $(docker ps -a -q)
+  docker volume prune
+  docker container prune --filter "until=24h"
+  docker image prune -a --filter "until=24h"
+  docker rmi -f $(docker images -aq)
+  docker network prune
+  colima stop
+  colima delete
+}
