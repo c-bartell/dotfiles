@@ -1,22 +1,22 @@
 [user]
-	name = Curtis Bartell
+  name = Curtis Bartell
   email = 60277914+c-bartell@users.noreply.github.com
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [commit]
-	template = ~/.gitmessage
+  template = ~/.gitmessage
 [core]
-	editor = "nvim -c 'set spell'"
-	excludesfile = ~/.gitignore
+  editor = "nvim -c 'set spell'"
+  excludesfile = ~/.gitignore
 [alias]
-	spaghetti = log --graph --oneline --all
+  spaghetti = log --graph --oneline --all
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
