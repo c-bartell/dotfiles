@@ -1,4 +1,3 @@
-lua <<LUA
 -- This setup is adapted from https://github.com/nvim-lualine/lualine.nvim/blob/master/examples/slanted-gaps.lua using the catppuccin mocha palette
 local mocha = require("catppuccin.palettes").get_palette "mocha"
 local colors = {
@@ -80,7 +79,7 @@ require('lualine').setup {
   sections = process_sections {
     lualine_a = { 'mode' },
     lualine_b = {
-      'branch',
+      -- 'branch',
       'diff',
       {
         'diagnostics',
@@ -125,5 +124,3 @@ require('lualine').setup {
     lualine_x = {},
   },
 }
-LUA
-

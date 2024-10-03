@@ -1,4 +1,3 @@
-lua <<LUA
 require('catppuccin').setup({
   flavour = "mocha",
   integrations = {
@@ -9,4 +8,3 @@ require('catppuccin').setup({
     treesitter = true,
   }
 })
-LUA
