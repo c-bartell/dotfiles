@@ -79,7 +79,7 @@ require('lualine').setup {
   sections = process_sections {
     lualine_a = { 'mode' },
     lualine_b = {
-      'branch',
+      -- 'branch',
       'diff',
       {
         'diagnostics',

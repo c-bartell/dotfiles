@@ -1,15 +1,16 @@
 [user]
 	name = Curtis Bartell
-	email = curtis.bartell@ibotta.com
+  email = 60277914+c-bartell@users.noreply.github.com
+
 [init]
 	defaultBranch = main
 [commit]
 	template = ~/.gitmessage
 [core]
-	editor = "vim -c 'set spell'"
+	editor = "nvim -c 'set spell'"
 	excludesfile = ~/.gitignore
 [alias]
-	spaghetti = log --graph --oneline --all	
+	spaghetti = log --graph --oneline --all
 [diff]
 	tool = vimdiff
 [difftool]
