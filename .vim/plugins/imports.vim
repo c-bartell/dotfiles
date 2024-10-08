@@ -70,6 +70,7 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " lualine
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'AndreM222/copilot-lualine'
 
 " fzf dependencies
 Plug 'junegunn/fzf' " fzf managed through Brewfile
@@ -80,6 +81,14 @@ Plug 'tpope/vim-vinegar'
 
 " All hail the AI overlords
 Plug 'github/copilot.vim'
+" Below are the dependencies for elementalvoid's copilot setup,
+" which can be found here: https://github.com/elementalvoid/dotfiles/blob/master/home/private_dot_config/nvim/lua/plugins/ai.lua#L37-L144
+" Plug 'zbirenbaum/copilot.lua'
+" Needs nvim-cmp
+" Plug 'zbirenbaum/copilot-cmp'
+" Plug 'zbirenbaum/copilot.lua'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
