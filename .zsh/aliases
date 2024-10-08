@@ -35,6 +35,7 @@ alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
 alias local-aws="drake aws --endpoint-url=http://localhost:4566"
 alias tfenv='GREP_OPTIONS=--color="never" tfenv'
 alias grepc='grep --color="always"'
+alias tflogin=tflogin
 alias tfinit="terraform init -backend=false"
 alias tfclean="rm -rf .terraform .terraform.lock.hcl"
 # alias tsrun="npx ts-node --pretty" # followed by filepath
