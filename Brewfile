@@ -53,6 +53,8 @@ brew "pmd7", args: ["build-from-source"] # Currently using a custom, local formu
 brew "rbenv"
 # Search tool like grep, but better
 brew "ripgrep"
+# Rust Toolchain Manager
+brew "rustup"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Terminal multiplexer

@@ -35,6 +35,9 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # Load SDKMAN (not managed by brew):
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# Rust stuff
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Colorize man pages with bat
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
