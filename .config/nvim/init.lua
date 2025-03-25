@@ -10,7 +10,7 @@ vim.cmd[[
   " Provides tab-completion for all file-related tasks
   set path+=**
 
-  set splitright
+  " set splitright
 
   " Fix syntax highlighting becoming out of sync in large files:
   autocmd BufEnter *.{js,jsx,ts,tsx,json} :syntax sync fromstart
