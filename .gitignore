@@ -9,7 +9,7 @@
 
 ## Ignore common IDE files
 .idea/
-.vscode/
+# .vscode/
 
 ## Restricted files for .dotfiles repo
 .Trash/
