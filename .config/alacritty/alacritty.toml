@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/fonts/anonymicepro.toml", "~/.config/alacritty/custom_themes/catppuccin/catppuccin-mocha.toml", "~/.config/alacritty/bell.toml"]
+general.import = ["~/.config/alacritty/fonts/anonymicepro.toml", "~/.config/alacritty/custom_themes/catppuccin/catppuccin-mocha.toml", "~/.config/alacritty/bell.toml"]
 
 [cursor.style]
 blinking = "On"
