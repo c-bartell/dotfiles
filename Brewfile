@@ -6,6 +6,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+# For installing granted
+tap "common-fate/granted"
 
 # Official Amazon AWS command-line interface
 brew "awscli"
@@ -34,6 +36,8 @@ brew "gh"
 brew "git"
 # Render markdown on the CLI
 brew "glow"
+# Granted CLI for AWS SSO
+brew "granted"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Java SDK 17
