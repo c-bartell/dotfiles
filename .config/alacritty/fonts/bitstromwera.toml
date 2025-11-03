@@ -1,13 +1,15 @@
+# BitstromWera Nerd Font Mono
+[font]
 size = 14.0
 
-[font.BitstromWera.bold]
+[font.bold]
 family = "BitstromWera Nerd Font Mono"
 style = "Bold"
 
-[font.BitstromWera.italic]
+[font.italic]
 family = "BitstromWera Nerd Font Mono"
 style = "Italic"
 
-[font.BitstromWera.normal]
+[font.normal]
 family = "BitstromWera Nerd Font Mono"
 style = "Regular"

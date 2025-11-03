@@ -1,14 +1,16 @@
-size = 14.0
+# Mononoki Nerd Font
+[font]
+size = 18.0
 
-[font.Mononoki.bold]
+[font.bold]
 family = "Mononoki Nerd Font Mono"
 style = "Bold"
 
-[font.Mononoki.italic]
+[font.italic]
 family = "Mononoki Nerd Font Mono"
 style = "Italic"
 
-[font.Mononoki.normal]
+[font.normal]
 family = "Mononoki Nerd Font Mono"
 style = "Regular"
 

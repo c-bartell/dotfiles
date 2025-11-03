@@ -1,14 +1,16 @@
+# ShureTechMono Nerd Font Mono
+[font]
 size = 14.0
 
-[font.ShureTechMono.bold]
+[font.bold]
 family = "ShureTechMono Nerd Font Mono"
 style = "Bold"
 
-[font.ShureTechMono.italic]
+[font.italic]
 family = "ShureTechMono Nerd Font Mono"
 style = "Italic"
 
-[font.ShureTechMono.normal]
+[font.normal]
 family = "ShureTechMono Nerd Font Mono"
 style = "Regular"
 

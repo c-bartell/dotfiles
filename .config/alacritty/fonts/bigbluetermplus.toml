@@ -1,13 +1,15 @@
+# BigBlueTermPlus Nerd Font Mono Configuration
+[font]
 size = 14.0
 
-[font.BigBlueTermPlus.bold]
+[font.bold]
 family = "BigBlueTermPlus Nerd Font Mono"
 style = "Bold"
 
-[font.BigBlueTermPlus.italic]
+[font.italic]
 family = "BigBlueTermPlus Nerd Font Mono"
 style = "Italic"
 
-[font.BigBlueTermPlus.normal]
+[font.normal]
 family = "BigBlueTermPlus Nerd Font Mono"
 style = "Regular"
