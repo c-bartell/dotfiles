@@ -15,6 +15,8 @@ brew "awscli"
 brew "aws-sso-util"
 # extended cat clone
 brew "bat"
+# Base64 encoding/decoding utility
+brew "base64"
 # Emacs dependency management
 brew "cask"
 # The wisdom of the cow
@@ -77,8 +79,6 @@ brew "tfenv"
 brew "vint"
 # Vi 'workalike' with many additional features
 brew "vim"
-# JavaScript package manager
-# brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Brave
@@ -122,7 +122,5 @@ cask "datagrip"
 cask "obsidian"
 # GNU Image Manupulation Program
 cask "gimp"
-# Notion notes app
-# cask "notion"
 # Salesforce DX CLI
 cask "sfdx"
