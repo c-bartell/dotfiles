@@ -1,4 +1,6 @@
-size = 14.0
+# iTerm2 font
+[font]
+size = 18.0
 
 [font.iterm2.bold]
 family = "Monaco"

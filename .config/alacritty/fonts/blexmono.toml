@@ -1,13 +1,15 @@
+# BlexMono Nerd Font Mono configuration file
+[font]
 size = 14.0
 
-[font.BlexMono.bold]
+[font.bold]
 family = "BlexMono Nerd Font Mono"
 style = "Bold"
 
-[font.BlexMono.italic]
+[font.italic]
 family = "BlexMono Nerd Font Mono"
 style = "Italic"
 
-[font.BlexMono.normal]
+[font.normal]
 family = "BlexMono Nerd Font Mono"
 style = "Regular"

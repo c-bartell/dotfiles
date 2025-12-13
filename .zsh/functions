@@ -7,11 +7,24 @@ unalias cd > /dev/null 2>&1
 function cdEnhanced() {
 	cd ${1:-${HOME}};
 	useNvmrc;
+  useTfenv;
 }
 
 function useNvmrc() {
   if [ -f .nvmrc ]; then
     nvm use;
+  fi
+}
+
+function useTfenv() {
+  if [ -f .terraform-version ]; then
+    tfenv use;
+  fi
+}
+
+function useRbenv() {
+  if [ -f .ruby-version ]; then
+    rbenv local;
   fi
 }
 

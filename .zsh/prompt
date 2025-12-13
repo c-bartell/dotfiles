@@ -4,6 +4,7 @@
 
 # Load version control information
 autoload -Uz vcs_info
+# If the (eval):7: parse error near `}' error is here, it should change to (eval):8
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable

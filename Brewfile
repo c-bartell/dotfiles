@@ -77,8 +77,6 @@ brew "tfenv"
 brew "vint"
 # Vi 'workalike' with many additional features
 brew "vim"
-# JavaScript package manager
-# brew "yarn"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Brave
@@ -122,7 +120,5 @@ cask "datagrip"
 cask "obsidian"
 # GNU Image Manupulation Program
 cask "gimp"
-# Notion notes app
-# cask "notion"
 # Salesforce DX CLI
 cask "sfdx"

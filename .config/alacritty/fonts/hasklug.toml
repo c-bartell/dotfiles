@@ -1,13 +1,15 @@
-size = 14.0
+# Hasklug Nerd Font Mono
+[font]
+size = 18.0
 
-[font.Hasklug.bold]
+[font.bold]
 family = "Hasklug Nerd Font Mono"
 style = "Bold"
 
-[font.Hasklug.italic]
+[font.italic]
 family = "Hasklug Nerd Font Mono"
 style = "Italic"
 
-[font.Hasklug.normal]
+[font.normal]
 family = "Hasklug Nerd Font Mono"
 style = "Regular"

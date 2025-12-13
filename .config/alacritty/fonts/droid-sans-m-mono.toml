@@ -1,0 +1,15 @@
+# DroidSansM Mono Nerd Font Mono configuration file
+[font]
+size = 18.0
+
+[font.bold]
+family = "DroidSansM Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "DroidSansM Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "DroidSansM Nerd Font Mono"
+style = "Regular"

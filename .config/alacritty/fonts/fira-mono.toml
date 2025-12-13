@@ -1,13 +1,15 @@
-size = 14.0
+# FiraMono Nerd Font Mono
+[font]
+size = 18.0
 
-[font.FiraMono.bold]
+[font.bold]
 family = "FiraMono Nerd Font Mono"
 style = "Bold"
 
-[font.FiraMono.italic]
+[font.italic]
 family = "FiraMono Nerd Font Mono"
 style = "Italic"
 
-[font.FiraMono.normal]
+[font.normal]
 family = "FiraMono Nerd Font Mono"
 style = "Regular"

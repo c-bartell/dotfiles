@@ -1,14 +1,16 @@
-size = 14.0
+# Terminess Nerd Font Mono
+[font]
+size = 22.0
 
-[font.Terminess.bold]
+[font.bold]
 family = "Terminess Nerd Font Mono"
 style = "Bold"
 
-[font.Terminess.italic]
+[font.italic]
 family = "Terminess Nerd Font Mono"
 style = "Italic"
 
-[font.Terminess.normal]
+[font.normal]
 family = "Terminess Nerd Font Mono"
 style = "Regular"
 

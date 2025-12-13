@@ -1,13 +1,15 @@
+# JetBrains Mono Nerd Font
+[font]
 size = 14.0
 
-[font.JetBrainsMono.bold]
-family = "JetBrainsMono Nerd Font"
+[font.bold]
+family = "JetBrainsMonoNL Nerd Font"
 style = "Bold"
 
-[font.JetBrainsMono.italic]
-family = "JetBrainsMono Nerd Font"
+[font.italic]
+family = "JetBrainsMonoNL Nerd Font"
 style = "Italic"
 
-[font.JetBrainsMono.normal]
-family = "JetBrainsMono Nerd Font"
+[font.normal]
+family = "JetBrainsMonoNL Nerd Font"
 style = "Regular"
