@@ -5,7 +5,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-let use_nerdtree = 0
+let use_nerdtree = 1
 
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -80,6 +80,8 @@ Plug 'tpope/vim-vinegar'
 
 " All hail the AI overlords
 Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'olimorris/codecompanion.nvim'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -95,6 +97,7 @@ source ~/.vim/plugins/config/salesforce.vim
 lua require("config.catppuccin")
 lua require("config.lualine")
 lua require("config.nvim-treesitter")
+lua require("config.codecompanion")
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
