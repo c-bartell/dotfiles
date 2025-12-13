@@ -27,18 +27,13 @@ alias getuuid=getuid
 alias scripts="jq '.scripts' package.json"
 alias branch_clean="git branch | grep -v \"master\|main\" | xargs git branch -D" # Deletes all local branches except master
 alias uuid="uuidgen | tr \"[A-Z]\" \"[a-z]\" | tr -d \"[\n]\" | pbcopy"
-alias s2aws="saml2aws login --skip-prompt --session-duration=43200"
-alias s2ax="saml2aws exec --exec-profile $1 --"
-alias ssox="aws-sso exec --profile $1"
-alias s2console="saml2aws console --exec-profile $1"
-alias drake="saml2aws exec --exec-profile monolith -- bin/drake"
+alias drake="assume --exec -- bin/drake"
+alias colima_start="colima start --arch aarch64 --cpu 4 --memory 8 --disk 128 --mount-type virtiofs --runtime docker --ssh-config --vm-type vz --vz-rosetta"
 alias local-aws="drake aws --endpoint-url=http://localhost:4566"
 alias tfenv='GREP_OPTIONS=--color="never" tfenv'
 alias grepc='grep --color="always"'
 alias tfinit="terraform init -backend=false"
 alias tfclean="rm -rf .terraform .terraform.lock.hcl"
-# alias tsrun="npx ts-node --pretty" # followed by filepath
-alias tsrun="npm exec -- ts-node --pretty" # followed by filepath
 alias statmain="git rev-list --left-right --count origin/main...\$(git branch --show-current) | awk '{print \"Behind \"\$1\" - Ahead \"\$2\"\"}'"
 # Now using "status" go wrapper from Steven Cassamajor: https://github.com/cassamajor/status
 # alias webstats="curl -s https://status.plaintext.sh/t | grep 'aws\|datadog\|docker\|github\|pagerduty\|slack'"
@@ -49,3 +44,4 @@ alias ll="eza -alh --icons=always"
 alias etree="eza --tree --icons=always"
 alias vim="nvim"
 alias bat="bat --theme='Catppuccin Mocha'"
+alias sso-app="cd \${HOME}/projects/dev-scripts/scripts/postman/auto_populate_aws_credentials && npm run sso-app"
