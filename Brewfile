@@ -15,8 +15,6 @@ brew "awscli"
 brew "aws-sso-util"
 # extended cat clone
 brew "bat"
-# Base64 encoding/decoding utility
-brew "base64"
 # Emacs dependency management
 brew "cask"
 # The wisdom of the cow
