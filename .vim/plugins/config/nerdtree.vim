@@ -14,3 +14,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " NERDTree Git configuration
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NerdTreeGitStatusUntrackedFilesMode = 1
+
+let g:NERDTreeHighlightCursorline = 1
+" Don't reuse open tabs when opening files from NERDTree. Open in current tab
+" instead.
+let g:NERDTreeCustomOpenArgs={'file':{'reuse':'currenttab'}}
