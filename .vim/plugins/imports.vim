@@ -25,7 +25,7 @@ Plug 'jparise/vim-graphql'
 
 if use_nerdtree
   " NerdTree file tree and extensions
-  Plug 'preservim/nerdtree'
+  " Plug 'preservim/nerdtree'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
