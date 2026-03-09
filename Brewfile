@@ -124,3 +124,5 @@ cask "obsidian"
 cask "gimp"
 # Salesforce DX CLI
 cask "sfdx"
+# Claude Code
+cask "claude-code"
