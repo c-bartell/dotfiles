@@ -53,6 +53,8 @@ brew "nvm"
 # Source code analyzer (installing for APEX)
 # brew "pmd"
 brew "pmd7", args: ["build-from-source"] # Currently using a custom, local formula to pull from latest release and map to pmd
+# pipx
+brew "pipx"
 # Ruby version manager
 brew "rbenv"
 # Search tool like grep, but better
