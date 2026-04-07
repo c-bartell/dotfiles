@@ -42,6 +42,6 @@ alias wat="curl -s https://gist.githubusercontent.com/c-bartell/158c171a2ec2c425
 alias ls="eza --icons=always"
 alias ll="eza -alh --icons=always"
 alias etree="eza --tree --icons=always"
-alias vim="nvim"
 alias bat="bat --theme='Catppuccin Mocha'"
 alias sso-app="cd \${HOME}/projects/dev-scripts/scripts/postman/auto_populate_aws_credentials && npm run sso-app"
+alias vim="echo 'Bruh. Use nvim instead.'"
