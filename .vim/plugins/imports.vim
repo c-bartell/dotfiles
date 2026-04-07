@@ -5,7 +5,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-let use_nerdtree = 1
+let use_nerdtree = 0
 
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -25,7 +25,7 @@ Plug 'jparise/vim-graphql'
 
 if use_nerdtree
   " NerdTree file tree and extensions
-  " Plug 'preservim/nerdtree'
+  Plug 'preservim/nerdtree'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
@@ -75,6 +75,9 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'junegunn/fzf' " fzf managed through Brewfile
 Plug 'junegunn/fzf.vim'
 
+" Give netrw icons
+Plug 'prichrd/netrw.nvim'
+
 " netrw settings
 Plug 'tpope/vim-vinegar'
 
@@ -98,6 +101,7 @@ lua require("config.catppuccin")
 lua require("config.lualine")
 lua require("config.nvim-treesitter")
 lua require("config.codecompanion")
+lua require("config.netrw")
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
 endif
