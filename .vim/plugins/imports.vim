@@ -81,11 +81,6 @@ Plug 'prichrd/netrw.nvim'
 " netrw settings
 Plug 'tpope/vim-vinegar'
 
-" All hail the AI overlords
-Plug 'github/copilot.vim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'olimorris/codecompanion.nvim'
-
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -100,7 +95,6 @@ source ~/.vim/plugins/config/salesforce.vim
 lua require("config.catppuccin")
 lua require("config.lualine")
 lua require("config.nvim-treesitter")
-lua require("config.codecompanion")
 lua require("config.netrw")
 if has_key(plugs, 'nerdtree')
   source ~/.vim/plugins/config/nerdtree.vim
