@@ -1,12 +1,11 @@
 " Heavily stolen from https://blog.ffff.lt/posts/typescript-and-ale/
-" let node_fixers = ['prettier', 'eslint']
-" let node_fixers = ['eslint']
+let node_fixers = ['prettier', 'eslint']
 
-" let g:ale_fixers = {
-" \  'javascript':node_fixers,
-" \  'typescript': node_fixers,
-" \  'ruby': ['rubocop'],
-" \}
+let g:ale_fixers = {
+\  'javascript': node_fixers,
+\  'typescript': node_fixers,
+\  'ruby': ['rubocop'],
+\}
 
 " let g:ale_fix_on_save = 1
 
@@ -37,7 +36,3 @@
 
 " let g:ale_virtualtext_cursor = 1
 " let g:ale_virtualtext_prefix = '🔥 '
-
-let g:ale_fixers = {
-\  'ruby': ['rubocop'],
-\}
