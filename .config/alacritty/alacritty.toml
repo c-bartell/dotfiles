@@ -1,5 +1,7 @@
 general.import = ["~/.config/alacritty/fonts/jetbrains-mono.toml", "~/.config/alacritty/custom_themes/catppuccin/catppuccin-mocha.toml", "~/.config/alacritty/bell.toml"]
 
+general.live_config_reload = true
+
 [cursor.style]
 blinking = "On"
 shape = "Block"
