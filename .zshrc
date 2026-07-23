@@ -1,7 +1,6 @@
 ###########
 ## ZSHRC ##
 ###########
-
 # Log everything for debugging
 # setopt xtrace
 
@@ -21,9 +20,6 @@ source ~/.zsh/sensitive
 
 # Load rbenv
 eval "$(rbenv init -)"
-
-# Load autocomplete for Salesforce CLI
-eval "$(sf autocomplete script zsh)"
 
 # No system java without this:
 export PATH="$(brew --prefix openjdk@17)/openjdk/bin:$PATH"

@@ -50,9 +50,6 @@ brew "mysql"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
-# Source code analyzer (installing for APEX)
-# brew "pmd"
-brew "pmd7", args: ["build-from-source"] # Currently using a custom, local formula to pull from latest release and map to pmd
 # pipx
 brew "pipx"
 # Ruby version manager
@@ -72,7 +69,7 @@ brew "Ibotta/public/sopstool"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Tree Sitter cli
-brew "tree-sitter"
+brew "tree-sitter-cli"
 # terraform runtime
 brew "tfenv"
 # Vim Linter
@@ -122,7 +119,5 @@ cask "datagrip"
 cask "obsidian"
 # GNU Image Manupulation Program
 cask "gimp"
-# Salesforce DX CLI
-cask "sfdx"
 # Claude Code
 cask "claude-code"

@@ -49,9 +49,6 @@ Plug 'tpope/vim-endwise'
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
-" Salesforce
-Plug 'neowit/vim-force.com'
-
 " Linting
 Plug 'dense-analysis/ale'
 
