@@ -7,6 +7,9 @@ let g:ale_fixers = {
 \  'ruby': ['rubocop'],
 \}
 
+" ALE Completion docs: https://github.com/dense-analysis/ale#completion
+let g:ale_completion_enabled = 1
+
 " let g:ale_fix_on_save = 1
 
 " Custom keybindings:
@@ -30,9 +33,9 @@ let g:ale_fixers = {
 " nnoremap <leader>qf :ALECodeAction<CR>
 " vnoremap <leader>qf :ALECodeAction<CR>
 
-" let g:ale_sign_error = '🐛'
-" let g:ale_sign_warning = '⚠️'
-" let g:ale_sign_info = 'ℹ'
+let g:ale_sign_error = '🐛'
+let g:ale_sign_warning = '⚠️'
+let g:ale_sign_info = 'ℹ'
 
-" let g:ale_virtualtext_cursor = 1
-" let g:ale_virtualtext_prefix = '🔥 '
+let g:ale_virtualtext_cursor = 1
+let g:ale_virtualtext_prefix = '🔥 '
