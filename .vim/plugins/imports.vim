@@ -86,9 +86,10 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
 
 " Load individual plugin configurations:
+" Load catpuccin before using it
+lua require("config.catppuccin")
 source ~/.vim/plugins/config/appearance.vim
 source ~/.vim/plugins/config/ale.vim
-lua require("config.catppuccin")
 lua require("config.lualine")
 lua require("config.nvim-treesitter")
 lua require("config.netrw")
